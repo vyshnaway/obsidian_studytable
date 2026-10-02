@@ -1,0 +1,12 @@
+{
+  "ocrEngine": "tesseract",
+  "mistralSecret": "",
+  "openAiCompatibleBaseUrl": "",
+  "openAiCompatibleModel": "",
+  "openAiCompatibleSecret": "",
+  "openAiCompatiblePrompt": "",
+  "customCommand": "",
+  "customCommandConvertPdfs": false,
+  "preferEmbeddedText": false,
+  "autoExtractAttachments": false
+}

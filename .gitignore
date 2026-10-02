@@ -1,0 +1,28 @@
+# Ignore everything by default
+*
+
+# Whitelist root meta files
+!.gitignore
+!/README.md
+
+# Whitelist hidden configuration directories
+!.git/
+!.git/**
+
+!.obsidian/
+!.obsidian/**
+
+!.soundscapes/
+!.soundscapes/**
+
+# Allow Git to inspect top-level directories for contents
+!*/
+
+# Whitelist all .gitkeep files recursively across allowed directories
+!**/.keep
+!**/.gitkeep
+
+# # Whitelist the Scripts directory and all its contents
+!Scripts/
+!Scripts/**
+Scripts/logs

@@ -1,0 +1,1036 @@
+{
+  "settings": {
+    "librariesConfig": {},
+    "syncInterval": 30,
+    "autoSync": false,
+    "useWebDav": false,
+    "useCache": true,
+    "maxCacheSizeMB": 500,
+    "librarySourceNoteTemplatePath": "",
+    "sourceNoteFolder": "",
+    "librarySourceNotePathTemplate": "ZotFlow/{{libraryName}}/@{{citationKey | default: title | default: key}}",
+    "localSourceNoteTemplatePath": "",
+    "localSourceNoteFolder": "",
+    "localSidecarFolder": "",
+    "localSourceNotePathTemplate": "ZotFlow/Local/@{{basename}}",
+    "autoImportAnnotationImages": true,
+    "annotationImageFolder": "Annotations",
+    "overwriteViewer": true,
+    "readerColorScheme": "obsidian-theme",
+    "defaultLightTheme": "original_fallback",
+    "defaultDarkTheme": "original_fallback",
+    "treeCollectionSort": "name-asc",
+    "treeItemSort": "title-asc",
+    "treeSingleClickOpen": false,
+    "convertNoteLinks": true,
+    "linkedAttachmentBaseDir": "",
+    "useZoteroStorage": false,
+    "zoteroStoragePath": "",
+    "defaultEditableRegionLocked": false,
+    "hideEditableRegionMarkers": false,
+    "alwaysOpenChildNoteInEditor": true,
+    "defaultCitationFormat": "footnote",
+    "citationTrigger": "@@",
+    "citationPandocTemplate": "",
+    "citationFootnoteRefTemplate": "",
+    "citationFootnoteTemplate": "",
+    "citationWikilinkTemplate": "",
+    "autoCopyAnnotation": "off",
+    "autoUpdateSourceNotesAfterSync": false,
+    "autoPurgeTrashedSourceNotes": false,
+    "autoDisableNoteImageTextTools": false,
+    "epubFontFamily": "",
+    "cslDefaultStyleId": "apa",
+    "cslDefaultFormat": "markdown",
+    "cslStylesFolder": ""
+  },
+  "customThemes": [
+    {
+      "background": "#1C1C1C",
+      "foreground": "#dadada",
+      "id": "obsidian",
+      "label": "Obsidian"
+    }
+  ],
+  "viewStates": {
+    "Prepfusion Onboarding.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": 120,
+        "top": 853,
+        "left": -11,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "Gate 2027 Syllabus.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 856,
+        "left": -14,
+        "scrollMode": 0,
+        "spreadMode": 1,
+        "lastReadAloudPosition": null
+      }
+    },
+    "3.3 (08-11) Electromagnetics/6.1 Miscellaneous Concepts.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 800,
+        "left": -15,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.1 (14-15) Aptitude/#AIO - converted - converted_cropped.pdf": {
+      "primaryViewState": {
+        "pageIndex": 2,
+        "scale": "page-width",
+        "top": 268,
+        "left": 17,
+        "scrollMode": 0,
+        "spreadMode": 1,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.2 (12-14) Mathematics/7.1 Complete Notes of Numerical Methods.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 322,
+        "left": -6,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.2 (12-14) Mathematics/3.1 Vector Calculus.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 3,
+        "scale": "page-width",
+        "top": 148,
+        "left": -14,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.2 (12-14) Mathematics/1.1 Linear Algebra.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 11,
+        "scale": "page-width",
+        "top": 320,
+        "left": -6,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.3 (07-10) Digital Electronics/9.1 Logic families and Semiconductor Memories.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 173,
+        "left": -10,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.3 (07-10) Digital Electronics/0.1 AIO.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 842,
+        "left": -6,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.4 (02-04) Computer Architecture/1.1 Computer Organization & Architecture.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 8,
+        "scale": "page-width",
+        "top": 582,
+        "left": -9,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.4 (02-04) Computer Architecture/2.1 CPU Design & Pipelines.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 606,
+        "left": -12,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "2.2 (05-08) Control Systems/1.1 Basics of Control system.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 2,
+        "scale": "page-width",
+        "top": 96,
+        "left": -12,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "2.2 (05-08) Control Systems/4.1 Time Domain Analysis.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 322,
+        "left": -5,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "2.3 (08-11) Signals and Systems/7.1 DTFT DTFS DFT FFT & Miscellaneous.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 800,
+        "left": -17,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "3.2 (08-11) Analog Electronics/0.1 AIO.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 842,
+        "left": -8,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "3.2 (08-11) Analog Electronics/6.2 Important Questions on Diode Circuits.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 322,
+        "left": -6,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "3.2 (08-11) Analog Electronics/6.1 CMOS Inverter.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 822,
+        "left": -18,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "3.2 (08-11) Analog Electronics/2.1 Rectifier & Filter.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 322,
+        "left": -6,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "3.2 (08-11) Analog Electronics/1.1 Basics.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 14,
+        "scale": "page-width",
+        "top": 439,
+        "left": -19,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "2.2 (05-08) Control Systems/5.1 Routh-Hurwitz Criterion.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 322,
+        "left": -6,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.2 (12-14) Mathematics/6.2 Basics of Probability Marathon.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 322,
+        "left": -5,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "2.1 (08-11) Network Analysis/0.2 AC.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 166,
+        "left": -10,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "2.1 (08-11) Network Analysis/0.1 DC.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 505,
+        "left": -6,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "3.1 (06-09) Electronic Devices/4.2 MOSFET.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 800,
+        "left": -14,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "2.2 (05-08) Control Systems/8.1 Controller and Compensator.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 322,
+        "left": -6,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "2.3 (08-11) Signals and Systems/0.5 Z-Transform, DTFT, DTFS, FFT.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 531,
+        "left": -18,
+        "scrollMode": 0,
+        "spreadMode": 1,
+        "lastReadAloudPosition": null
+      }
+    },
+    "2.3 (08-11) Signals and Systems/1.1 Basics of Signals.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 86,
+        "left": -26,
+        "scrollMode": 0,
+        "spreadMode": 1,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.1 (14-15) Aptitude/# Aptitude X/Aptitude Questions.pdf": {
+      "primaryViewState": {
+        "pageIndex": 124,
+        "scale": "page-width",
+        "top": 25,
+        "left": -8,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "# NexusX/nexusx_v1.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 842,
+        "left": -7,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "3.4 (10-13) Communication/4.2 Angle Modulation.pdf": {
+      "secondaryViewState": null
+    },
+    "# NexusX/Network Theory — EC.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 848,
+        "left": -8,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.1 (14-15) Aptitude/#PYQ/2021.pdf": {
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 489,
+        "left": -16,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "2.1 (08-11) Network Analysis/3.1 Transient Analysis.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 2,
+        "scale": "page-width",
+        "top": 788,
+        "left": -14,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "2.1 (08-11) Network Analysis/2.1 Network Theorems.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 800,
+        "left": -15,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "2.1 (08-11) Network Analysis/AQ BulbBasedProblems.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 646,
+        "left": -18,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "2.1 (08-11) Network Analysis/AQ AC Analysis + Two Port Networks.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 231,
+        "left": -10,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "0.0 VLSI for Placements/0.2 Digital VLSI.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 842,
+        "left": -7,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "0.0 VLSI for Placements/0.1 Campus To VLSI.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 842,
+        "left": -6,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.1 (14-15) Aptitude/0.1 Permutations and Combinations.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 834,
+        "left": -44,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.1 (14-15) Aptitude/0.2 Probability.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 322,
+        "left": -5,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.1 (14-15) Aptitude/1.1 Number System.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 817,
+        "left": -21,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "# SiliconX/Communication Systems — EC.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 842,
+        "left": -7,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.1 (14-15) Aptitude/0.0 AIO.pdf": {
+      "primaryViewState": {
+        "pageIndex": 2,
+        "scale": "page-width",
+        "top": 288,
+        "left": 10,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      },
+      "secondaryViewState": null
+    },
+    "0.0 VLSI for Placements/0.3 Analog VLSI.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 842,
+        "left": -7,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "2.3 (08-11) Signals and Systems/2.1 Basics of Systems.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 800,
+        "left": -13,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.1 (14-15) Aptitude/1.2 Percentage & Profit-Loss.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 813,
+        "left": -14,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.1 (14-15) Aptitude/1.4 Ratio, Proportion, Partnership, Mixtures & Allegations.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 800,
+        "left": -14,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.1 (14-15) Aptitude/3.8 Syllogism.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 595,
+        "left": -9,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.1 (14-15) Aptitude/3.1 Direction Sense Test.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 800,
+        "left": -14,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.1 (14-15) Aptitude/1.7 Time & Distance and Boats & Streams.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 800,
+        "left": -14,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.1 (14-15) Aptitude/1.6 Pipes & Cisterns.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 800,
+        "left": -14,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.1 (14-15) Aptitude/2.4 Geometry & Mensuration.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 800,
+        "left": -14,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "3.4 (10-13) Communication/1.2 Random Variable.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 800,
+        "left": -14,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "3.4 (10-13) Communication/1.1 Random Process.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 800,
+        "left": -14,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.1 (14-15) Aptitude/1.5 Time & Work.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 800,
+        "left": -14,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.1 (14-15) Aptitude/1.3 Averages.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 800,
+        "left": -14,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.2 (12-14) Mathematics/2.3 Integral Calculus.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 322,
+        "left": -13,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.2 (12-14) Mathematics/4.1 Differential Equations.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 1,
+        "scale": "page-width",
+        "top": 19,
+        "left": -14,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.2 (12-14) Mathematics/5.1 Complex Variables.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 34,
+        "left": -25,
+        "scrollMode": 0,
+        "spreadMode": 1,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.2 (12-14) Mathematics/6.1 Permutations & Combinations.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 800,
+        "left": -14,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.2 (12-14) Mathematics/6.3 Random Variables & Probability Distribution Functions.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 322,
+        "left": -5,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.3 (07-10) Digital Electronics/1.1 Logic Gates & Boolean Algebra.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 136,
+        "scale": "page-width",
+        "top": 99,
+        "left": -13,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.3 (07-10) Digital Electronics/2.1 Representation of Boolean Expressions & K-Maps.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 20,
+        "scale": "page-width",
+        "top": 798,
+        "left": -12,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.3 (07-10) Digital Electronics/3.1 Number Systems.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 631,
+        "left": -13,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.3 (07-10) Digital Electronics/4.1 Combinational Circuits.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 800,
+        "left": -14,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.3 (07-10) Digital Electronics/7.1 Satic Timing Analysis.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 32,
+        "scale": "page-width",
+        "top": 274,
+        "left": -25,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.3 (07-10) Digital Electronics/5.1 Latches, Flipflops and Counters.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 800,
+        "left": -22,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.3 (07-10) Digital Electronics/6.1 (FSM and Sequence Detector).pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 100,
+        "scale": "page-width",
+        "top": 778,
+        "left": -25,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "2.1 (08-11) Network Analysis/4.1 Phasor and Locus Diagram.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 2,
+        "scale": "page-width",
+        "top": 357,
+        "left": -10,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "2.1 (08-11) Network Analysis/5.1 Complex Power.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 549,
+        "left": -10,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "2.1 (08-11) Network Analysis/6.1 Resonance.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 540,
+        "left": -10,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "2.1 (08-11) Network Analysis/8.1 Two Port Parameters.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 548,
+        "left": -10,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "2.1 (08-11) Network Analysis/7.1 Network Theorms in AC.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 540,
+        "left": -10,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.3 (07-10) Digital Electronics/Assignment 1 1.pdf": {
+      "secondaryViewState": null
+    },
+    "1.3 (07-10) Digital Electronics/Assignment 1.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 5,
+        "scale": "page-width",
+        "top": 637,
+        "left": -14,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "compressed/Gate 2027 Syllabus.pdf": {
+      "secondaryViewState": null
+    },
+    "# AptudX/Aptitude Questions.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 842,
+        "left": -7,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "# MathsX/A. Calculus.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 842,
+        "left": -7,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "# NexusX/Analog Electronics — EC.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 2,
+        "scale": "page-width",
+        "top": 748,
+        "left": -7,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      },
+      "darkTheme": "dark"
+    },
+    "1.3 (07-10) Digital Electronics/8.1 ADCs & DACs.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 62,
+        "scale": "page-width",
+        "top": 800,
+        "left": -29,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.3 (07-10) Digital Electronics/Assignment 8.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 800,
+        "left": -12,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.2 (12-14) Mathematics/2.1 Basics of Calculus.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 322,
+        "left": -13,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "1.2 (12-14) Mathematics/2.2 Differential Calculus.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 333,
+        "left": -12,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "2.1 (08-11) Network Analysis/1.1 Basics of Network Analysis.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 807,
+        "left": -18,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    }
+  }
+}

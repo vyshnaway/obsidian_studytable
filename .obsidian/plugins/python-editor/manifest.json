@@ -1,0 +1,9 @@
+{
+  "id": "python-editor",
+  "name": "Python Editor",
+  "version": "0.1.4",
+  "minAppVersion": "1.5.0",
+  "description": "Edit Python source files with an outline, highlighting, search, and auto-save.",
+  "author": "Wu",
+  "isDesktopOnly": false
+}

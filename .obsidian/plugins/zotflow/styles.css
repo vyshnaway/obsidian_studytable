@@ -1,0 +1,2801 @@
+/* ============================================================
+   Search Suggest Modal
+   ============================================================ */
+
+/* Container for the whole item */
+.zotflow-search-item {
+    display: flex;
+    align-items: center;
+    padding: var(--size-2-2) var(--size-4-3);
+    width: 100%;
+}
+
+/* The Icon */
+.zotflow-item-icon {
+    margin-right: 12px;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    color: var(--text-accent);
+}
+
+/* The Content Column (Up/Down Wrapper) */
+.zotflow-item-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-width: 0;
+    overflow: hidden;
+}
+
+/* UP: Title */
+.zotflow-row-top .zotflow-title {
+    font-weight: normal;
+    font-size: var(--font-ui-small);
+    margin-bottom: 2px;
+    color: var(--text-normal);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* DOWN: Meta and Paths */
+.zotflow-row-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-ui-smaller);
+    color: var(--text-muted);
+    width: 100%;
+    gap: 8px;
+}
+
+/* Down-Left: Meta info (Author • Year) */
+.zotflow-meta {
+    flex-shrink: 1;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Down-Right: Path pills */
+.zotflow-paths {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+/* Individual path pill */
+.zotflow-path-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    font-size: var(--font-ui-smaller);
+    padding: var(--size-2-1) var(--size-4-1);
+    border-radius: var(--radius-s);
+    white-space: nowrap;
+    background-color: var(--tag-background);
+    border: var(--tag-border-width) solid var(--tag-border-color);
+    color: var(--tag-color);
+}
+
+/* The "/" separator inside a pill */
+/* .zotflow-path-pill .path-sep {
+    opacity: 0.4;
+    font-size: 0.85em;
+    margin: 0 1px;
+} */
+
+/* Suggestion Header */
+.suggestion-container .suggestion-item.zotflow-suggestion-header,
+.prompt-results .suggestion-item.zotflow-suggestion-header {
+    background-color: transparent;
+    padding: var(--size-2-2) var(--size-4-3);
+    font-size: var(--font-ui-smaller);
+    font-weight: var(--font-semibold);
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    pointer-events: none;
+    border-bottom: none;
+}
+
+.prompt-results > .zotflow-suggestion-header:first-child {
+    padding-top: 0;
+}
+
+/* Empty State */
+.prompt-results .suggestion-item.zotflow-suggestion-empty {
+    background-color: transparent;
+    font-size: var(--font-ui-smaller);
+    pointer-events: none;
+    border-bottom: none;
+    text-align: center;
+}
+
+/* Reset Padding */
+.suggestion-item.zotflow-suggestion-header .zotflow-search-item {
+    padding: 0;
+}
+
+/* Down-Right: Tags (kept for future use) */
+.zotflow-tags {
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.zotflow-tags .tag {
+    background-color: var(--tag-background);
+    border: var(--tag-border-width) solid var(--tag-border-color);
+    border-radius: var(--tag-radius);
+    color: var(--tag-color);
+    font-size: 0.9em;
+    font-weight: var(--tag-weight);
+    text-decoration: var(--tag-decoration);
+    padding: var(--tag-padding-y) var(--tag-padding-x);
+    line-height: 1.2;
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* ============================================================
+   Tag Edit Modal
+   ============================================================ */
+
+.zotflow-tag-edit-modal {
+    & .modal-header {
+        & .modal-title {
+            font-size: var(--font-ui-medium);
+        }
+    }
+}
+
+.zotflow-tag-edit-subtitle {
+    color: var(--text-muted);
+    font-size: var(--font-ui-small);
+    margin-bottom: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.zotflow-tag-edit-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    min-height: 32px;
+    padding: 6px;
+    margin-bottom: 10px;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-s);
+    background-color: var(--background-secondary);
+}
+
+.zotflow-tag-edit-empty {
+    color: var(--text-faint);
+    font-size: var(--font-ui-small);
+    padding: 4px 2px;
+}
+
+.zotflow-tag-edit-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background-color: var(--tag-background);
+    border: var(--tag-border-width) solid var(--tag-border-color);
+    border-radius: var(--tag-radius);
+    color: var(--tag-color);
+    font-size: var(--font-ui-small);
+    padding: 2px 8px;
+}
+
+.zotflow-tag-edit-chip.is-automatic {
+    opacity: 0.75;
+    font-style: italic;
+}
+
+.zotflow-tag-edit-chip-remove {
+    display: flex;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 1;
+    opacity: 0.7;
+    transform: scale(0.8);
+}
+
+.zotflow-tag-edit-chip-remove:hover {
+    opacity: 0.9;
+    color: var(--text-error);
+}
+
+.zotflow-tag-edit-row {
+    margin-bottom: 8px;
+}
+
+.zotflow-tag-edit-input {
+    width: 100%;
+}
+
+/* Tag autocomplete suggestion items */
+.zotflow-tag-suggestion {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-ui-small);
+}
+
+.zotflow-tag-suggestion-text {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* ============================================================
+   Search Operator Autocomplete (tree view + search modal)
+   ============================================================ */
+
+.zotflow-tree-view-header
+    .global-search-input-container.search-input-container
+    input.zotflow-tree-view-search-input {
+    padding-inline-end: 0;
+}
+
+.zotflow-search-value {
+    font-size: var(--font-ui-small);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* ============================================================
+   Notification Styles
+   ============================================================ */
+
+.zotflow-notice-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.zotflow-notice-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1.5px; /* Visual alignment with text */
+}
+
+.zotflow-notice-message {
+    flex: 1;
+    word-break: break-word;
+}
+
+.zotflow-notice-link {
+    flex-shrink: 0;
+    white-space: nowrap;
+    color: var(--text-accent);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* ============================================================
+   Settings
+   ============================================================ */
+
+.zotflow-settings-lib-table-wrapper {
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.zotflow-settings-lib-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.zotflow-settings-lib-table thead {
+    background-color: var(--background-secondary);
+}
+
+.zotflow-settings-lib-table th {
+    padding: 10px;
+    text-align: left;
+    font-size: var(--font-ui-small);
+    font-weight: var(--font-medium);
+}
+
+.zotflow-settings-lib-table td {
+    padding: 10px;
+    font-size: var(--font-ui-small);
+}
+
+.zotflow-settings-lib-table tbody tr + tr {
+    border-top: 1px solid var(--background-modifier-border);
+}
+
+.zotflow-settings-lib-type-cell {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.zotflow-settings-access-badge {
+    font-size: var(--font-ui-small);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.zotflow-settings-access-badge--rw {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+}
+
+.zotflow-settings-access-badge--ro {
+    background-color: var(--background-modifier-border);
+}
+
+.zotflow-settings-access-notes {
+    margin-top: 2px;
+    font-size: var(--font-ui-smaller);
+    color: var(--text-muted);
+}
+
+.zotflow-settings-lib-select {
+    width: 100%;
+}
+
+.zotflow-settings-cache-usage {
+    display: block;
+    margin-top: var(--size-4-2);
+}
+
+.zotflow-settings-cache-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    font-size: var(--font-ui-smaller);
+    color: var(--text-muted);
+}
+
+.zotflow-settings-cache-progress-bg {
+    width: 100%;
+    height: 10px;
+    background-color: var(--background-modifier-border);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.zotflow-settings-cache-progress-fill {
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.zotflow-settings-table-btn-container {
+    margin-top: 0.5rem;
+}
+
+.zotflow-settings-danger-btn {
+    color: var(--text-error);
+}
+
+.zotflow-settings-citation textarea {
+    width: 24rem;
+    max-width: 100%;
+}
+
+.workspace-leaf-content[data-type="zotflow-tree-view"] .view-content {
+    padding: 0;
+}
+
+.workspace-leaf-content[data-type="zotflow-zotero-reader-view"] .view-content {
+    padding: 0;
+    overflow: hidden;
+}
+
+.workspace-leaf-content[data-type="zotflow-local-zotero-reader-view"]
+    .view-content {
+    padding: 0;
+    overflow: hidden;
+}
+
+/* .internal-embed.markdown-embed:has([data-callout^="zotflow"]) {
+    border: none;
+
+    & .markdown-embed-content > .markdown-preview-view {
+        padding: 0 !important;
+    }
+} */
+
+/* ============================================================
+   Zotero Tree View
+   ============================================================ */
+
+.zotflow-tree {
+    padding: 10px 10px 0;
+}
+
+.zotflow-tree-view-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.zotflow-tree-view-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: var(--size-4-3) var(--size-4-3);
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.zotflow-tree-view-container {
+    flex: 1;
+    position: relative;
+    min-height: 0px;
+    min-width: 0px;
+    padding-inline-start: var(--size-4-2);
+    padding-top: var(--size-4-2);
+}
+
+/* react-arborist >= 3.10.1 puts `min-width: max-content` on every row so that a
+ * row's selection highlight keeps spanning the full width once a tree scrolls
+ * sideways (their #10). This tree is handed an explicit `width={dims.w}` and is
+ * meant to fit its pane, never to scroll sideways — and a max-content row hands
+ * the name span its full natural width, so the span never overflows and its
+ * `text-overflow: ellipsis` has nothing to act on. Long titles then get cut off
+ * flat by the pane edge instead of trailing off in an ellipsis. Their value is
+ * an inline style, so overriding it needs `!important`. */
+.zotflow-tree-view-container [role="treeitem"] {
+    min-width: 0 !important;
+}
+
+.zotflow-node-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.zotflow-node {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+    margin-inline-end: 6px;
+    margin-bottom: var(--nav-item-margin-bottom);
+    border-radius: var(--nav-item-radius);
+    color: var(--nav-item-color);
+    font-size: var(--nav-item-size);
+    font-weight: var(--nav-item-weight);
+    line-height: var(--line-height-tight);
+}
+.zotflow-node:hover {
+    color: var(--nav-item-color-hover);
+    background-color: var(--nav-item-background-hover);
+    font-weight: var(--nav-item-weight-hover);
+}
+.zotflow-node.selected {
+    color: var(--nav-item-color-active);
+    background-color: var(--nav-item-background-active);
+    font-weight: var(--nav-item-weight-active);
+}
+.zotflow-indent-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+    border-inline-start: var(--nav-indentation-guide-width) solid
+        var(--nav-indentation-guide-color);
+}
+.zotflow-arrow-box {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Enlarge the chevron's hit box without shifting layout:
+       negative margin cancels the padding's visual footprint. */
+    padding: 0 3px 0 8px;
+    margin: 0 -3px 0 -8px;
+    opacity: var(--icon-opacity);
+    color: var(--icon-color);
+    z-index: 2;
+    margin-inline-end: 4px;
+
+    .svg-icon {
+        color: var(--nav-collapse-icon-color);
+        stroke-width: 2px;
+        width: 16px;
+        height: 16px;
+        transition: transform 100ms ease-in-out;
+    }
+}
+.zotflow-file-icon {
+    margin-right: 6px;
+    color: var(--icon-color);
+}
+.zotflow-folder-icon {
+    margin-right: 6px;
+    color: var(--icon-color);
+}
+.zotflow-highlight {
+    background: rgba(234, 180, 8, 0.25);
+    color: var(--text-warning);
+    border-radius: 2px;
+    font-weight: bold;
+}
+.zotflow-spin {
+    animation: spin 1.5s linear infinite;
+}
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ============================================================
+   Callouts
+   ============================================================ */
+
+.callout[data-callout^="zotflow"][data-callout$="#ffd400"] {
+    --callout-color: rgb(var(--color-yellow-rgb));
+}
+
+.callout[data-callout^="zotflow"][data-callout$="#ff6666"] {
+    --callout-color: rgb(var(--color-red-rgb));
+}
+
+.callout[data-callout^="zotflow"][data-callout$="#5fb236"] {
+    --callout-color: rgb(var(--color-green-rgb));
+}
+
+.callout[data-callout^="zotflow"][data-callout$="#2ea8e5"] {
+    --callout-color: rgb(var(--color-blue-rgb));
+}
+
+.callout[data-callout^="zotflow"][data-callout$="#a28ae5"] {
+    --callout-color: rgb(var(--color-purple-rgb));
+}
+
+.callout[data-callout^="zotflow"][data-callout$="#e56eee"] {
+    --callout-color: rgb(var(--color-pink-rgb));
+}
+
+.callout[data-callout^="zotflow"][data-callout$="#f19837"] {
+    --callout-color: rgb(var(--color-orange-rgb));
+}
+
+.callout[data-callout^="zotflow"][data-callout$="#aaaaaa"] {
+    --callout-color: #aaaaaa;
+}
+
+.callout[data-callout^="zotflow-highlight"] {
+    --callout-icon: zotero-highlight;
+}
+
+.callout[data-callout^="zotflow-underline"] {
+    --callout-icon: zotero-underline;
+}
+
+.callout[data-callout^="zotflow-text"] {
+    --callout-icon: zotero-text;
+}
+
+.callout[data-callout^="zotflow-note"] {
+    --callout-icon: zotero-note;
+}
+
+.callout[data-callout^="zotflow-image"] {
+    --callout-icon: zotero-image;
+}
+
+.callout[data-callout^="zotflow-ink"] {
+    --callout-icon: zotero-ink;
+}
+
+/* ============================================================
+   Reader
+   ============================================================ */
+
+.zotflow-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: var(--size-4-4);
+    color: var(--text-muted);
+    text-align: center;
+}
+
+/* ============================================================
+   Activity Center
+   ============================================================ */
+
+.mod-zotflow-ac {
+    width: 90vw;
+    height: 80vh;
+
+    & .modal-header {
+        & .modal-title {
+            font-size: var(--font-ui-medium);
+        }
+    }
+
+    & .modal-content {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+}
+
+.zotflow-ac {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Tabs */
+.zotflow-ac-tabs {
+    display: flex;
+    overflow-x: auto;
+    gap: 0;
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.zotflow-ac-tab {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: var(--font-ui-small);
+    font-weight: 500;
+    padding: 10px 16px;
+    cursor: pointer;
+    position: relative;
+    transition:
+        all 0.2s ease,
+        border-bottom 0s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.zotflow-ac-tab:hover {
+    color: var(--text-normal);
+    background-color: var(--background-modifier-hover);
+}
+
+.zotflow-ac-tab.is-active {
+    color: var(--interactive-accent);
+    border-bottom: 2px solid var(--interactive-accent);
+}
+
+.zotflow-ac-content {
+    flex: 1;
+    overflow: auto;
+    padding: var(--size-4-4) var(--size-2-2);
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-4-3);
+}
+
+/* ============================================================
+   Activity Center: Tasks View
+   ============================================================ */
+
+.zotflow-tasks-view {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-4-4);
+    height: 100%;
+    overflow: hidden;
+}
+
+.zotflow-tasks-section-header {
+    font-size: var(--font-ui-small);
+    font-weight: var(--font-semibold);
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--size-4-3);
+    flex-shrink: 0;
+}
+
+.zotflow-tasks-section:first-child {
+    display: flex;
+    flex-direction: column;
+    min-height: 35%;
+    max-height: 65%;
+    flex: 0 1 auto;
+}
+
+.zotflow-tasks-history-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 35%;
+    max-height: 65%;
+    flex: 1 1 auto;
+}
+
+.zotflow-tasks-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--size-4-8) 0;
+    color: var(--text-faint);
+    gap: var(--size-4-2);
+    font-size: var(--font-ui-small);
+
+    flex: 1 1 auto;
+}
+
+/* Task Cards (active) */
+.zotflow-task-cards {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-4-2);
+}
+
+.zotflow-task-card {
+    flex-shrink: 0;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-s);
+    padding: var(--size-4-3) var(--size-4-4);
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.zotflow-task-card:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+.zotflow-task-card.is-expanded {
+    background-color: var(--background-modifier-hover);
+}
+
+.zotflow-task-card-row {
+    display: flex;
+    align-items: center;
+    gap: var(--size-4-4);
+}
+
+.zotflow-task-card-icon {
+    color: var(--interactive-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.zotflow-task-card-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.zotflow-task-card-title {
+    font-size: var(--font-ui-small);
+    color: var(--text-normal);
+    margin-bottom: var(--size-4-2);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.zotflow-task-card-cancel {
+    display: flex;
+    align-items: center;
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+
+.zotflow-task-card-cancel:hover {
+    color: var(--text-error);
+}
+
+/* Active card expanded details */
+.zotflow-task-card-details {
+    margin-top: var(--size-4-2);
+    padding-top: var(--size-4-2);
+    border-top: 1px solid var(--background-modifier-border);
+    font-size: var(--font-ui-smaller);
+}
+
+.zotflow-task-detail-msg {
+    color: var(--text-muted);
+    margin-bottom: var(--size-4-1);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.zotflow-task-detail-row {
+    display: flex;
+    gap: var(--size-4-3);
+    padding: 2px 0;
+    color: var(--text-muted);
+}
+
+.zotflow-task-detail-label {
+    color: var(--text-faint);
+    min-width: 4em;
+    flex-shrink: 0;
+}
+
+.zotflow-task-detail-row code {
+    font-family: var(--font-monospace);
+    font-size: var(--font-ui-smaller);
+    color: var(--text-muted);
+    word-break: break-all;
+}
+
+/* Progress bars (shared between task cards and sync) */
+.zotflow-task-progress-bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--background-modifier-border);
+    border-radius: 1.5px;
+    overflow: hidden;
+}
+
+.zotflow-task-progress-fill {
+    height: 100%;
+    background-color: var(--interactive-accent);
+    transition: width 0.3s ease;
+    border-radius: 1.5px;
+}
+
+.zotflow-task-progress-bar.is-indeterminate .zotflow-task-progress-fill {
+    width: 100%;
+    animation: zotflow-shimmer 1.5s ease-in-out infinite;
+}
+
+@keyframes zotflow-shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* History list */
+.zotflow-history-list {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-s);
+}
+
+.zotflow-history-item {
+    flex-shrink: 0;
+    padding: var(--size-4-3) var(--size-4-4);
+    border-bottom: 1px solid var(--background-modifier-border);
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.zotflow-history-item:last-child {
+    border-bottom: none;
+}
+
+.zotflow-history-item:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+.zotflow-history-item.is-expanded {
+    background-color: var(--background-modifier-hover);
+}
+
+.zotflow-history-header {
+    display: flex;
+    align-items: center;
+    gap: var(--size-4-3);
+    font-size: var(--font-ui-small);
+}
+
+.zotflow-history-status {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.zotflow-status-success {
+    color: var(--text-success);
+}
+
+.zotflow-status-warning {
+    color: var(--text-warning);
+}
+
+.zotflow-status-error {
+    color: var(--text-error);
+}
+
+.zotflow-status-muted {
+    color: var(--text-muted);
+}
+
+.zotflow-history-time {
+    color: var(--text-faint);
+    font-family: var(--font-monospace);
+    font-size: var(--font-ui-smaller);
+    flex-shrink: 0;
+}
+
+.zotflow-history-msg {
+    color: var(--text-normal);
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* History expanded details */
+.zotflow-history-details {
+    margin-top: var(--size-4-2);
+    font-size: var(--font-ui-smaller);
+}
+
+.zotflow-history-json code {
+    font-family: var(--font-monospace);
+    font-size: var(--font-ui-smaller);
+    color: var(--text-muted);
+    word-break: break-all;
+}
+
+.zotflow-history-json-error code {
+    color: var(--text-error);
+}
+
+/* ============================================================
+   Activity Center: Sync View
+   ============================================================ */
+.zotflow-sync-view {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-4-4);
+    height: 100%;
+    overflow: hidden;
+}
+
+.zotflow-sync-section-header {
+    font-size: var(--font-ui-small);
+    font-weight: var(--font-semibold);
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--size-4-1);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: var(--size-4-2);
+}
+
+.zotflow-sync-controls {
+    display: flex;
+    flex-direction: column;
+    min-height: 25%;
+    max-height: 45%;
+    flex: 0 1 auto;
+}
+
+.zotflow-sync-conflicts {
+    display: flex;
+    flex-direction: column;
+    min-height: 55%;
+    max-height: 75%;
+    flex: 1 1 auto;
+}
+
+/* Conflict count badge */
+.zotflow-sync-conflict-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--text-error);
+    color: var(--text-on-accent);
+    font-size: var(--font-smallest);
+    font-weight: var(--font-semibold);
+    min-width: 18px;
+    height: 18px;
+    padding: 0 5px;
+    border-radius: 9px;
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+/* Empty state */
+.zotflow-sync-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--size-4-8) 0;
+    color: var(--text-faint);
+    gap: var(--size-4-2);
+    font-size: var(--font-ui-small);
+
+    flex: 1 1 auto;
+}
+
+/* Spin animation */
+.zotflow-spin > svg {
+    animation: zotflow-spin-anim 1.5s linear infinite;
+}
+
+@keyframes zotflow-spin-anim {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ---- Library table ---- */
+.zotflow-sync-lib-table-wrapper {
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-s);
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 260px;
+}
+
+.zotflow-sync-lib-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.zotflow-sync-lib-table thead {
+    background-color: var(--background-secondary);
+    top: 0;
+    z-index: 1;
+}
+
+.zotflow-sync-lib-table th {
+    padding: var(--size-4-2) var(--size-4-3);
+    text-align: left;
+    font-size: var(--font-ui-small);
+    font-weight: var(--font-medium);
+    color: var(--text-muted);
+}
+
+.zotflow-sync-lib-table td {
+    padding: var(--size-4-2) var(--size-4-3);
+    font-size: var(--font-ui-small);
+    color: var(--text-normal);
+    vertical-align: middle;
+}
+
+.zotflow-sync-lib-table tbody tr + tr {
+    border-top: 1px solid var(--background-modifier-border);
+}
+
+.zotflow-sync-lib-row-ignored td {
+    opacity: 0.5;
+}
+
+.zotflow-sync-lib-type {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.zotflow-sync-badge {
+    font-size: var(--font-ui-smaller);
+    padding: 2px 6px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.zotflow-sync-badge--rw {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+}
+
+.zotflow-sync-badge--ro {
+    background-color: var(--background-modifier-border);
+    color: var(--text-muted);
+}
+
+.zotflow-sync-mode-label {
+    color: var(--text-muted);
+}
+
+.zotflow-sync-changed-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 6px;
+    border-radius: 10px;
+    font-size: var(--font-ui-smaller);
+    font-weight: var(--font-semibold);
+    background-color: rgba(var(--color-yellow-rgb), 0.15);
+    color: var(--text-warning);
+}
+
+.zotflow-sync-changed-none {
+    color: var(--text-faint);
+}
+
+.zotflow-sync-lib-table td.zotflow-sync-time-cell {
+    font-family: var(--font-monospace);
+    font-size: var(--font-ui-smaller);
+    color: var(--text-faint);
+    white-space: nowrap;
+}
+
+/* Sync All button row */
+.zotflow-sync-actions {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: var(--size-4-2);
+}
+
+/* ---- Conflict panel ---- */
+.zotflow-conflict-container {
+    display: flex;
+    gap: var(--size-4-4);
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+}
+
+/* Conflict sidebar list */
+.zotflow-conflict-list {
+    width: 220px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-4-2);
+    overflow-y: auto;
+    padding-right: var(--size-4-2);
+}
+
+.zotflow-conflict-item {
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-s);
+    padding: var(--size-4-2) var(--size-4-3);
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.zotflow-conflict-item:hover {
+    background-color: var(--background-modifier-hover);
+    border-color: var(--background-modifier-border-hover);
+}
+
+.zotflow-conflict-item.is-selected {
+    border-color: var(--interactive-accent);
+    background-color: rgba(var(--interactive-accent-rgb), 0.08);
+}
+
+.zotflow-conflict-key {
+    font-family: var(--font-monospace);
+    font-size: var(--font-ui-smaller);
+    color: var(--text-faint);
+}
+
+.zotflow-conflict-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.zotflow-conflict-type-badge {
+    font-size: 10px;
+    font-weight: var(--font-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 1px 6px;
+    border-radius: var(--radius-s);
+    flex-shrink: 0;
+}
+
+.zotflow-conflict-type-badge--update {
+    background-color: rgba(var(--color-yellow-rgb), 0.15);
+    color: var(--text-warning);
+}
+
+.zotflow-conflict-type-badge--delete {
+    background-color: rgba(var(--color-red-rgb), 0.15);
+    color: var(--text-error);
+}
+
+.zotflow-conflict-type-badge--push {
+    background-color: rgba(var(--color-orange-rgb), 0.15);
+    color: var(--text-warning);
+}
+
+.zotflow-conflict-type-badge--collection {
+    background-color: rgba(var(--color-blue-rgb), 0.15);
+    color: var(--text-accent);
+}
+
+.zotflow-conflict-title {
+    display: block;
+    font-size: var(--font-ui-small);
+    color: var(--text-normal);
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Diff pane (right side) */
+.zotflow-conflict-diff {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-4-3);
+    min-width: 0;
+    overflow: hidden;
+}
+
+.zotflow-conflict-diff-heading {
+    font-size: var(--font-ui-medium);
+    font-weight: var(--font-semibold);
+    color: var(--text-normal);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* Sync error banner in diff pane */
+.zotflow-conflict-sync-error {
+    display: flex;
+    align-items: center;
+    gap: var(--size-4-2);
+    padding: var(--size-4-2) var(--size-4-3);
+    background-color: rgba(var(--color-red-rgb), 0.08);
+    border: 1px solid rgba(var(--color-red-rgb), 0.2);
+    border-radius: var(--radius-s);
+    font-size: var(--font-ui-smaller);
+    color: var(--text-error);
+    flex-shrink: 0;
+}
+
+/* Field diff table */
+.zotflow-field-diff-wrapper {
+    flex: 1;
+    overflow: auto;
+    min-height: 0;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-s);
+}
+
+.zotflow-field-diff-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: var(--font-ui-smaller);
+}
+
+.zotflow-field-diff-table thead {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.zotflow-field-diff-table th {
+    padding: var(--size-4-2) var(--size-4-3);
+    text-align: left;
+    font-size: var(--font-ui-smaller);
+    font-weight: var(--font-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    background-color: var(--background-secondary);
+    border-bottom: 1px solid var(--background-modifier-border);
+    color: var(--text-muted);
+}
+
+.zotflow-field-diff-table th:first-child {
+    width: 140px;
+}
+
+.zotflow-field-diff-local {
+    color: var(--text-error);
+}
+
+.zotflow-field-diff-remote {
+    color: var(--text-success);
+}
+
+.zotflow-field-diff-table td {
+    padding: var(--size-4-2) var(--size-4-3);
+    border-bottom: 1px solid var(--background-modifier-border);
+    vertical-align: top;
+}
+
+.zotflow-field-diff-name {
+    font-family: var(--font-monospace);
+    font-weight: var(--font-medium);
+    color: var(--text-normal);
+    word-break: break-word;
+}
+
+.zotflow-field-diff-val {
+    max-width: 0;
+}
+
+.zotflow-field-diff-val pre {
+    margin: 0;
+    font-family: var(--font-monospace);
+    font-size: var(--font-ui-smaller);
+    line-height: 1.5;
+    color: var(--text-muted);
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.zotflow-field-diff-val--local {
+    background-color: rgba(var(--color-red-rgb), 0.04);
+}
+
+.zotflow-field-diff-val--remote {
+    background-color: rgba(var(--color-green-rgb), 0.04);
+}
+
+/* Conflict action buttons */
+.zotflow-conflict-actions {
+    display: flex;
+    gap: var(--size-4-3);
+    justify-content: flex-end;
+    flex-shrink: 0;
+}
+
+.zotflow-conflict-btn {
+    padding: var(--size-4-2) var(--size-4-4);
+    border: none;
+    border-radius: var(--radius-s);
+    font-size: var(--font-ui-small);
+    font-weight: var(--font-medium);
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.zotflow-conflict-btn--local {
+    background-color: var(--background-modifier-border);
+    color: var(--text-normal);
+}
+
+.zotflow-conflict-btn--local:hover {
+    background-color: var(--background-modifier-border-hover);
+}
+
+.zotflow-conflict-btn--remote {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+}
+
+.zotflow-conflict-btn--remote:hover {
+    filter: brightness(1.1);
+}
+
+/* Sync reminder after resolving all conflicts */
+.zotflow-sync-reminder {
+    display: flex;
+    align-items: center;
+    gap: var(--size-4-2);
+    padding: var(--size-4-2) var(--size-4-3);
+    background-color: rgba(var(--color-blue-rgb), 0.08);
+    border: 1px solid rgba(var(--color-blue-rgb), 0.2);
+    border-radius: var(--radius-s);
+    font-size: var(--font-ui-small);
+    color: var(--text-accent);
+}
+
+/* ============================================================
+   Activity Center: Repair View
+   ============================================================ */
+
+.zotflow-repair-view {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-4-3);
+    height: 100%;
+}
+
+.zotflow-repair-header {
+    flex-shrink: 0;
+}
+
+.zotflow-repair-title {
+    display: flex;
+    align-items: center;
+    gap: var(--size-4-2);
+    font-weight: var(--font-semibold);
+    font-size: var(--font-ui-medium);
+    margin-bottom: var(--size-4-1);
+}
+
+.zotflow-repair-description {
+    font-size: var(--font-ui-small);
+    color: var(--text-muted);
+    margin: 0;
+}
+
+.zotflow-repair-controls {
+    display: flex;
+    gap: var(--size-4-2);
+    flex-shrink: 0;
+}
+
+.zotflow-repair-controls button {
+    display: flex;
+    align-items: center;
+    gap: var(--size-4-1);
+}
+
+.zotflow-repair-summary {
+    display: flex;
+    align-items: center;
+    gap: var(--size-4-3);
+    font-size: var(--font-ui-small);
+    flex-shrink: 0;
+}
+
+.zotflow-repair-summary-ok {
+    color: var(--text-success);
+}
+
+.zotflow-repair-summary-fail {
+    color: var(--text-error);
+}
+
+.zotflow-repair-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--size-4-8) 0;
+    color: var(--text-faint);
+    gap: var(--size-4-2);
+    font-size: var(--font-ui-small);
+}
+
+.zotflow-repair-auto-badge {
+    font-size: var(--font-ui-smaller);
+    color: var(--text-success);
+    margin-bottom: var(--size-4-1);
+}
+
+.zotflow-repair-table-wrapper {
+    flex: 1 1 auto;
+    overflow: auto;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-s);
+}
+
+.zotflow-repair-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--font-ui-small);
+}
+
+.zotflow-repair-table thead {
+    position: sticky;
+    top: 0;
+    background: var(--background-secondary);
+    z-index: 1;
+}
+
+.zotflow-repair-table th {
+    text-align: left;
+    padding: var(--size-4-2) var(--size-4-3);
+    font-weight: var(--font-semibold);
+    color: var(--text-muted);
+    font-size: var(--font-ui-smaller);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.zotflow-repair-table td {
+    padding: var(--size-4-2) var(--size-4-3);
+    vertical-align: top;
+}
+
+.zotflow-repair-table tbody tr + tr {
+    border-top: 1px solid var(--background-modifier-border);
+}
+
+.zotflow-repair-row-auto {
+    background: var(--background-modifier-success);
+}
+
+.zotflow-repair-cell-file {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.zotflow-repair-cell-line {
+    color: var(--text-faint);
+    font-size: var(--font-ui-smaller);
+}
+
+.zotflow-repair-cell-ref code {
+    font-size: var(--font-ui-smaller);
+    background: rgba(var(--color-red-rgb), 0.15);
+    color: var(--text-error);
+    padding: 1px 4px;
+    border-radius: var(--radius-s);
+}
+
+.zotflow-repair-cell-display {
+    display: block;
+    color: var(--text-muted);
+    font-size: var(--font-ui-smaller);
+    margin-top: 2px;
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.zotflow-repair-cell-context {
+    display: block;
+    margin: 6px 0 0;
+    padding: 6px 8px 6px 10px;
+    background: var(--background-secondary);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-s);
+    font-family: var(--font-monospace);
+    font-size: var(--font-ui-smaller);
+    line-height: 1.5;
+    color: var(--text-muted);
+    overflow-x: auto;
+    white-space: pre;
+}
+
+.zotflow-repair-cell-context > div {
+    white-space: pre;
+}
+
+.zotflow-repair-context-target {
+    background: rgba(var(--color-red-rgb), 0.08);
+    border-left: 2px solid var(--text-error);
+    padding-left: 4px;
+    margin-left: -4px;
+    color: var(--text-normal);
+}
+
+.zotflow-repair-context-linenum {
+    display: inline-block;
+    width: 3em;
+    text-align: right;
+    margin-right: 8px;
+    color: var(--text-faint);
+    user-select: none;
+}
+
+.zotflow-repair-cell-fix select {
+    max-width: 250px;
+}
+
+.zotflow-repair-cell-fix code {
+    font-size: var(--font-ui-smaller);
+    background: var(--background-modifier-success);
+    padding: 1px 4px;
+    border-radius: var(--radius-s);
+}
+
+.zotflow-repair-no-match {
+    color: var(--text-faint);
+    font-style: italic;
+}
+
+.zotflow-repair-single .u-muted {
+    color: var(--text-muted);
+    font-size: var(--font-ui-smaller);
+}
+
+.zotflow-repair-cell-action {
+    width: 40px;
+    text-align: center;
+}
+
+/* ============================================================
+   Activity Center: Telemetry View
+   ============================================================ */
+
+.zotflow-telemetry-view {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-4-3);
+    height: 100%;
+}
+
+.zotflow-telemetry-toolbar {
+    display: flex;
+    gap: var(--size-4-2);
+    align-items: center;
+}
+
+.zotflow-telemetry-filter {
+    width: 100px;
+}
+
+.zotflow-telemetry-search {
+    flex: 1;
+}
+
+.zotflow-telemetry-toolbar-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--size-4-1);
+    color: var(--text-muted);
+}
+
+.zotflow-telemetry-toolbar-btn:hover {
+    color: var(--text-normal);
+}
+
+.zotflow-log-console {
+    flex: 1;
+    background-color: var(--background-primary-alt);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-s);
+    padding: var(--size-4-3);
+    overflow-y: auto;
+    font-family: var(--font-monospace);
+    font-size: var(--font-ui-smaller);
+    line-height: 1.6;
+}
+
+.zotflow-log-line {
+    padding: 2px 0;
+    color: var(--text-muted);
+    border-radius: 2px;
+}
+
+.zotflow-log-line--expandable {
+    cursor: pointer;
+}
+
+.zotflow-log-line--expandable:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+.zotflow-log-line-header {
+    display: flex;
+    align-items: center;
+    gap: var(--size-4-2);
+}
+
+.zotflow-log-chevron {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    color: var(--text-faint);
+}
+
+.zotflow-log-chevron svg {
+    width: 12px;
+    height: 12px;
+}
+
+.zotflow-log-copy-btn {
+    flex-shrink: 0;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    padding: 0 2px;
+}
+
+.zotflow-log-line:hover .zotflow-log-copy-btn {
+    opacity: 1;
+}
+
+.zotflow-log-copy-btn svg {
+    width: 12px;
+    height: 12px;
+}
+
+.zotflow-log-line.zotflow-log-error {
+    color: var(--text-error);
+    background-color: rgba(var(--color-red-rgb), 0.08);
+    padding: 2px var(--size-4-1);
+    margin: 2px calc(-1 * var(--size-4-1));
+    border-radius: 2px;
+}
+
+.zotflow-log-line.zotflow-log-warn {
+    color: var(--text-warning);
+}
+
+.zotflow-log-line.zotflow-log-debug {
+    color: var(--text-faint);
+}
+
+.zotflow-log-time {
+    flex-shrink: 0;
+    color: var(--text-faint);
+}
+
+.zotflow-log-level {
+    flex-shrink: 0;
+    min-width: 5ch;
+    font-weight: var(--font-semibold);
+}
+
+.zotflow-log-context {
+    flex-shrink: 0;
+    color: var(--text-accent);
+}
+
+.zotflow-log-msg {
+    flex: 1;
+    min-width: 0;
+    word-break: break-word;
+}
+
+.zotflow-log-msg--truncated {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.zotflow-log-detail {
+    margin: var(--size-4-1) 0 var(--size-4-2) 24px;
+    padding: var(--size-4-2) var(--size-4-3);
+    background-color: var(--background-primary);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-s);
+    font-size: var(--font-ui-smaller);
+    white-space: pre-wrap;
+    word-break: break-word;
+    color: var(--text-muted);
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.zotflow-log-empty {
+    color: var(--text-faint);
+    text-align: center;
+    padding: var(--size-4-6);
+}
+
+/* ============================================================
+   Activity Center: Template Test View
+   ============================================================ */
+
+.zotflow-template-test {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-4-3);
+    height: 100%;
+}
+
+.zotflow-template-test-section-header {
+    font-size: var(--font-ui-small);
+    font-weight: var(--font-semibold);
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--size-4-2);
+    flex-shrink: 0;
+}
+
+.zotflow-template-test-env-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.zotflow-template-test-env {
+    display: flex;
+    align-items: center;
+    gap: var(--size-4-2);
+}
+
+.zotflow-template-test-annotation-row {
+    display: flex;
+    align-items: center;
+    gap: var(--size-4-2);
+    margin-top: var(--size-4-1);
+}
+
+/* Multi-select dropdown */
+.zotflow-multiselect {
+    position: relative;
+    display: inline-block;
+    min-width: 200px;
+}
+
+.zotflow-multiselect-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: var(--size-4-2);
+    padding: var(--size-4-1) var(--size-4-2);
+}
+
+.zotflow-multiselect-trigger-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.zotflow-multiselect-chevron {
+    flex-shrink: 0;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+}
+
+.zotflow-multiselect-chevron svg {
+    width: 14px;
+    height: 14px;
+}
+
+.zotflow-multiselect-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: var(--layer-popover);
+    margin-top: 2px;
+    max-height: 220px;
+    overflow-y: auto;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-s);
+    background: var(--background-primary);
+    box-shadow: var(--shadow-s);
+}
+
+.zotflow-multiselect-toggle-all {
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.zotflow-multiselect-empty {
+    padding: var(--size-4-2);
+    font-size: var(--font-ui-small);
+    color: var(--text-faint);
+    font-style: italic;
+}
+
+.zotflow-multiselect-item {
+    display: flex;
+    align-items: center;
+    gap: var(--size-4-2);
+    padding: var(--size-2-2) var(--size-4-2);
+    cursor: pointer;
+    font-size: var(--font-ui-small);
+}
+
+.zotflow-multiselect-item:hover {
+    background: var(--background-modifier-hover);
+}
+
+.zotflow-multiselect-item-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.zotflow-template-test-selection {
+    font-size: var(--font-ui-small);
+    color: var(--text-muted);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+}
+
+.zotflow-template-test-panels {
+    display: flex;
+    gap: var(--size-4-3);
+    flex: 1;
+    min-height: 0;
+}
+
+.zotflow-template-test-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    gap: var(--size-2-2);
+}
+
+.zotflow-template-test-editor {
+    flex: 1;
+    min-height: 200px;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-s);
+    overflow: hidden;
+}
+
+.zotflow-template-test-editor .cm-editor {
+    height: 100%;
+}
+
+.zotflow-template-test-editor .cm-scroller {
+    overflow: auto;
+}
+
+.zotflow-template-test-output {
+    flex: 1;
+    min-height: 200px;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-s);
+    overflow: hidden;
+}
+
+.zotflow-template-test-output .cm-editor {
+    height: 100%;
+}
+
+.zotflow-template-test-output .cm-scroller {
+    overflow: auto;
+}
+
+.zotflow-template-test-preview {
+    overflow: auto;
+    padding: var(--size-4-2);
+}
+
+.zotflow-template-test-placeholder {
+    color: var(--text-faint);
+    font-style: italic;
+}
+
+.zotflow-template-test-panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.zotflow-template-test-panel-header .zotflow-template-test-section-header {
+    margin-bottom: 0;
+}
+
+.zotflow-template-test-mode-toggle {
+    display: flex;
+    gap: var(--size-2-2);
+}
+
+.zotflow-template-test-mode-toggle .clickable-icon.is-active {
+    color: var(--text-accent);
+}
+
+.zotflow-template-test-error {
+    font-size: var(--font-ui-small);
+    color: var(--text-error);
+    padding: var(--size-4-2);
+    border: 1px solid var(--text-error);
+    border-radius: var(--radius-s);
+    background: rgba(var(--color-red-rgb), 0.05);
+}
+
+.zotflow-template-test-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* ============================================================
+   Activity Center: Responsive
+   Desktop (>=1025px) uses the default rules above.
+   ============================================================ */
+
+/* ---------- Tablet (601-1024px) ---------- */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .zotflow-ac-tab {
+        padding: 10px 12px;
+    }
+
+    /* Narrow the conflict sidebar so the diff pane keeps room */
+    .zotflow-conflict-list {
+        width: 180px;
+    }
+}
+
+/* ---------- Phone (<=600px) ---------- */
+@media (max-width: 600px) {
+    /* Tabs become icon-only and share the width evenly */
+    .zotflow-ac-tab {
+        flex: 1 1 0;
+        justify-content: center;
+        gap: 0;
+        padding: var(--size-4-2) var(--size-2-2);
+    }
+
+    .zotflow-ac-tab-label {
+        display: none;
+    }
+
+    .zotflow-ac-content {
+        padding: var(--size-4-3) var(--size-2-1);
+    }
+
+    /* Sync: stack the conflict list above the diff pane */
+    .zotflow-conflict-container {
+        flex-direction: column;
+    }
+
+    .zotflow-conflict-list {
+        width: 100%;
+        max-height: 30vh;
+        border-bottom: 1px solid var(--background-modifier-border);
+    }
+
+    .zotflow-sync-lib-table-wrapper {
+        max-height: 40vh;
+        overflow-x: auto;
+    }
+
+    .zotflow-field-diff-table th:first-child {
+        width: 90px;
+    }
+
+    /* Tasks: relax the fixed 35/65 split on short screens */
+    .zotflow-tasks-section:first-child,
+    .zotflow-tasks-history-section {
+        min-height: 25%;
+    }
+
+    /* Template: stack the editor and output panels vertically */
+    .zotflow-template-test-panels {
+        flex-direction: column;
+    }
+
+    .zotflow-template-test-editor,
+    .zotflow-template-test-output {
+        min-height: 140px;
+    }
+
+    .zotflow-template-test-env {
+        flex-wrap: wrap;
+    }
+
+    .zotflow-multiselect {
+        min-width: 0;
+        flex: 1;
+    }
+
+    /* Repair: keep the table but scroll it instead of crushing columns */
+    .zotflow-repair-table-wrapper {
+        overflow-x: auto;
+    }
+
+    .zotflow-repair-table {
+        min-width: 640px;
+    }
+
+    /* Telemetry: let the toolbar wrap and the filter grow */
+    .zotflow-telemetry-toolbar {
+        flex-wrap: wrap;
+    }
+
+    .zotflow-telemetry-filter {
+        width: auto;
+        flex: 1 1 120px;
+    }
+}
+
+/* ============================================================
+    Note Editor View
+    ============================================================ */
+
+.zotflow-note-preview-content {
+    width: 100%;
+    height: 100%;
+}
+
+.zotflow-note-preview-empty {
+    padding: var(--size-4-8);
+    color: var(--text-muted);
+    text-align: center;
+    font-style: italic;
+}
+
+/* ================================================================ */
+/*  Citation / Annotation Span Links                                */
+/* ================================================================ */
+
+/* Anchors injected into Zotero highlight/underline/citation spans
+   (see citation-span-links.ts). Long quoted passages shouldn't read
+   as links — inherit the text look, reveal affordance on hover. */
+a.zotflow-span-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+body a.external-link.zotflow-span-link {
+    /* Suppress Obsidian's external-link icon decoration */
+    background-image: none;
+    padding-inline-end: 0;
+}
+
+a.zotflow-span-link:hover {
+    border-bottom: 1px solid var(--interactive-accent);
+    cursor: pointer;
+}
+
+/* ================================================================ */
+/*  Editable Region Markers                                         */
+/* ================================================================ */
+
+body.zotflow-hide-region-markers .cm-zotflow-tag-text-note,
+body.zotflow-hide-region-markers .cm-zotflow-tag-text-persist {
+    display: none;
+}
+
+body.zotflow-hide-region-markers .cm-zotflow-end-line-note,
+body.zotflow-hide-region-markers .cm-zotflow-end-line-persist {
+    display: none;
+}
+
+body.zotflow-hide-region-markers .cm-zotflow-meta-line:not(.cm-active) {
+    display: none;
+}
+
+/* ══════════════ CSL Render (Activity Center CSL tab) ══════════════ */
+
+.zotflow-csl-view {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-4-4);
+    height: 100%;
+    overflow: hidden;
+}
+
+.zotflow-csl-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.zotflow-csl-section--styles {
+    flex: 1 1 auto;
+}
+
+.zotflow-csl-section--locales {
+    flex: 0 1 auto;
+    max-height: 40%;
+}
+
+/* -- Section header: label + count ... checked / update all / add -- */
+
+.zotflow-csl-section-header {
+    display: flex;
+    align-items: center;
+    gap: var(--size-4-2);
+    margin-bottom: var(--size-4-1);
+    flex-shrink: 0;
+}
+
+.zotflow-csl-section-title {
+    font-size: var(--font-ui-small);
+    font-weight: var(--font-semibold);
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.zotflow-csl-count {
+    background-color: var(--background-modifier-hover);
+    color: var(--text-muted);
+    font-size: var(--font-ui-smaller);
+    font-weight: var(--font-medium);
+    padding: 0 var(--size-4-2);
+    border-radius: 999px;
+    line-height: 1.6;
+}
+
+.zotflow-csl-section-actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: var(--size-4-1);
+}
+
+.zotflow-csl-checked {
+    color: var(--text-faint);
+    font-size: var(--font-ui-smaller);
+    white-space: nowrap;
+}
+
+/* Standard Obsidian button (default background + hover); only the
+   icon/text layout is ours. */
+.zotflow-csl-textbtn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--size-4-1);
+    font-size: var(--font-ui-smaller);
+}
+
+.zotflow-csl-textbtn svg {
+    width: 12px;
+    height: 12px;
+}
+
+/* -- Lists & rows -- */
+
+.zotflow-csl-list {
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-s);
+    padding: var(--size-2-1) var(--size-4-2);
+    overflow-y: auto;
+    flex: 1 1 auto;
+    min-height: 0;
+}
+
+.zotflow-csl-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--size-4-8) 0;
+    color: var(--text-faint);
+    gap: var(--size-4-2);
+    font-size: var(--font-ui-small);
+}
+
+.zotflow-csl-group {
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.zotflow-csl-group:last-child {
+    border-bottom: none;
+}
+
+/* Consistent grid: [status] info ... [source][actions] */
+.zotflow-csl-row {
+    display: flex;
+    align-items: center;
+    gap: var(--size-4-2);
+    padding: var(--size-4-2) var(--size-4-1);
+    border-radius: var(--radius-s);
+    cursor: pointer;
+}
+
+.zotflow-csl-row:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+.zotflow-csl-row--broken {
+    background-color: rgba(var(--color-red-rgb), 0.05);
+}
+
+.zotflow-csl-row--locale {
+    cursor: default;
+}
+
+.zotflow-csl-row-status {
+    display: flex;
+    width: 14px;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* Quiet status: happy path is a pale dot; problems escalate. */
+.zotflow-csl-dot {
+    border-radius: 999px;
+}
+
+.zotflow-csl-dot--ready {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(var(--color-green-rgb), 0.7);
+}
+
+.zotflow-csl-dot--resolvable {
+    width: 8px;
+    height: 8px;
+    background-color: var(--color-yellow);
+}
+
+.zotflow-csl-status-icon svg {
+    width: 14px;
+    height: 14px;
+    color: var(--text-error);
+}
+
+.zotflow-csl-row-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.zotflow-csl-row-title-line {
+    display: flex;
+    align-items: center;
+    gap: var(--size-4-2);
+    min-width: 0;
+}
+
+.zotflow-csl-row-title {
+    font-size: var(--font-ui-small);
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.zotflow-csl-row-subtle {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--size-4-1);
+    color: var(--text-muted);
+    font-size: var(--font-ui-smaller);
+    white-space: nowrap;
+}
+
+.zotflow-csl-row-subtle svg {
+    width: 13px;
+    height: 13px;
+}
+
+/* Layered metadata: title / id + facts / progressively fainter. */
+.zotflow-csl-row-meta {
+    margin-top: 1px;
+    font-size: var(--font-ui-smaller);
+    color: var(--text-muted);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.zotflow-csl-meta-sep {
+    color: var(--text-faint);
+    margin: 0 var(--size-4-1);
+}
+
+.zotflow-csl-meta-warn {
+    color: var(--color-yellow);
+}
+
+.zotflow-csl-meta-error {
+    color: var(--text-error);
+}
+
+.zotflow-csl-mono {
+    font-family: var(--font-monospace);
+    font-size: 0.92em;
+}
+
+.zotflow-csl-row-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--size-2-1);
+    flex-shrink: 0;
+}
+
+.zotflow-csl-source-glyph {
+    color: var(--text-faint);
+    padding: 0 var(--size-2-1);
+}
+
+.zotflow-csl-source-glyph svg {
+    width: 14px;
+    height: 14px;
+}
+
+.zotflow-csl-danger:hover {
+    color: var(--text-error);
+}
+
+/* Non-interactive icon that fills an action slot (e.g. built-in locale in
+   the delete position) so row right edges stay aligned. */
+.zotflow-csl-slot-glyph {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--size-2-2) var(--size-2-3);
+    color: var(--text-faint);
+}
+
+.zotflow-csl-slot-glyph svg {
+    width: var(--icon-s);
+    height: var(--icon-s);
+}
+
+/* Standard Obsidian button with a yellow border as the attention cue. */
+.zotflow-csl-chip-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--size-4-1);
+    border: 1px solid rgba(var(--color-yellow-rgb), 0.5);
+    font-size: var(--font-ui-smaller);
+    font-weight: var(--font-medium);
+}
+
+.zotflow-csl-chip-btn svg {
+    width: 12px;
+    height: 12px;
+}
+
+/* -- Neutral capability badges (Type / Output) -- */
+
+.zotflow-csl-fbadge {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--background-modifier-hover);
+    border: 1px solid var(--background-modifier-border);
+    color: var(--text-muted);
+    font-size: var(--font-smallest);
+    font-weight: var(--font-medium);
+    letter-spacing: 0.02em;
+    padding: 0 var(--size-4-1);
+    border-radius: var(--radius-s);
+    line-height: 1.5;
+    white-space: nowrap;
+}
+
+.zotflow-csl-fbadge--pending {
+    color: var(--text-faint);
+    background: none;
+    border-style: dashed;
+}
+
+/* -- Aliases collapse under their parent -- */
+
+.zotflow-csl-alias-list {
+    margin-left: var(--size-4-6);
+    padding-left: var(--size-4-3);
+    border-left: 1px solid var(--background-modifier-border);
+    margin-bottom: var(--size-4-1);
+}
+
+.zotflow-csl-alias-row {
+    display: flex;
+    align-items: center;
+    gap: var(--size-4-2);
+    padding: var(--size-2-1) var(--size-4-1);
+    border-radius: var(--radius-s);
+    color: var(--text-muted);
+    font-size: var(--font-ui-smaller);
+    cursor: pointer;
+}
+
+.zotflow-csl-alias-row:hover {
+    background-color: var(--background-modifier-hover);
+}
+
+.zotflow-csl-alias-arrow {
+    color: var(--text-faint);
+    flex-shrink: 0;
+}
+
+.zotflow-csl-alias-arrow svg {
+    width: 13px;
+    height: 13px;
+}
+
+/* Layering matches parent rows: title is primary (normal text color),
+   the mono id is demoted -- monospace reads heavy, so shrink + fade it. */
+.zotflow-csl-alias-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--text-normal);
+    font-weight: 500;
+}
+
+.zotflow-csl-alias-id {
+    flex-shrink: 0;
+    color: var(--text-faint);
+    font-size: var(--font-smallest);
+}
+
+.zotflow-csl-alias-actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.zotflow-csl-footnote {
+    margin: var(--size-4-1) var(--size-4-1) 0;
+    font-size: var(--font-ui-smaller);
+    color: var(--text-faint);
+    flex-shrink: 0;
+}
+
+.zotflow-csl-muted {
+    color: var(--text-muted);
+    font-size: var(--font-ui-smaller);
+}
+
+/* -- Modals (Add / Details) -- */
+
+/* Same title treatment as the tag edit modal. */
+.zotflow-csl-modal {
+    & .modal-header {
+        & .modal-title {
+            font-size: var(--font-ui-medium);
+        }
+    }
+}
+
+.zotflow-csl-add-modal .zotflow-csl-modal-card {
+    margin: var(--size-4-2) 0;
+    padding: var(--size-4-2) var(--size-4-3);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-s);
+    font-size: var(--font-ui-small);
+}
+
+/* Card headings sit OUTSIDE the bordered card, per ZotFlow UI. */
+.zotflow-csl-modal-card-heading {
+    font-size: var(--font-ui-smaller);
+    font-weight: var(--font-semibold);
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: var(--size-4-4) 0 var(--size-4-2) var(--size-2-1);
+}
+
+.zotflow-csl-modal-card-heading + .zotflow-csl-modal-card {
+    margin-top: 0;
+}
+
+.zotflow-csl-modal-row {
+    display: flex;
+    align-items: baseline;
+    gap: var(--size-4-2);
+    padding: 2px 0;
+    overflow-wrap: anywhere;
+}
+
+.zotflow-csl-add-idle {
+    margin: var(--size-4-2) 0;
+    padding: var(--size-4-6) var(--size-4-3);
+    border: 1px dashed var(--background-modifier-border);
+    border-radius: var(--radius-s);
+    text-align: center;
+    color: var(--text-faint);
+    font-size: var(--font-ui-small);
+}
+
+/* Details table: striped label/value rows shared by Add + Details. */
+.zotflow-csl-details-table {
+    margin: var(--size-4-2) 0;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-s);
+    overflow: hidden;
+    font-size: var(--font-ui-small);
+}
+
+.zotflow-csl-details-row {
+    display: flex;
+    gap: var(--size-4-3);
+    padding: var(--size-2-1) var(--size-4-3);
+    overflow-wrap: anywhere;
+}
+
+.zotflow-csl-details-row:nth-child(even) {
+    background-color: var(--background-modifier-hover);
+}
+
+.zotflow-csl-details-label {
+    flex-shrink: 0;
+    width: 7.5em;
+    color: var(--text-muted);
+}
+
+.zotflow-csl-details-value {
+    flex: 1;
+    min-width: 0;
+    display: inline-flex;
+    align-items: baseline;
+    gap: var(--size-4-1);
+    flex-wrap: wrap;
+}
+
+.zotflow-csl-details-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--size-2-1);
+    overflow-wrap: anywhere;
+}
+
+.zotflow-csl-details-note {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--size-4-2);
+    margin: var(--size-4-2) 0;
+    padding: var(--size-4-2) var(--size-4-3);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--radius-s);
+    background-color: var(--background-secondary);
+    color: var(--text-muted);
+    font-size: var(--font-ui-small);
+}
+
+.zotflow-csl-details-note--quiet {
+    background: none;
+    color: var(--text-faint);
+    font-size: var(--font-ui-smaller);
+}
+
+.zotflow-csl-strong {
+    color: var(--text-normal);
+    font-weight: var(--font-medium);
+}
+
+.zotflow-csl-inline-icon {
+    display: inline-flex;
+    flex-shrink: 0;
+    color: currentColor;
+}
+
+.zotflow-csl-inline-icon svg {
+    width: 13px;
+    height: 13px;
+}
+
+.zotflow-csl-callout {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--size-4-2);
+    margin: var(--size-4-2) 0;
+    padding: var(--size-4-2) var(--size-4-3);
+    border-radius: var(--radius-s);
+    font-size: var(--font-ui-small);
+}
+
+.zotflow-csl-callout--warning {
+    border: 1px solid rgba(var(--color-yellow-rgb), 0.3);
+    background-color: rgba(var(--color-yellow-rgb), 0.07);
+    color: var(--color-yellow);
+}
+
+.zotflow-csl-callout--error {
+    border: 1px solid rgba(var(--color-red-rgb), 0.3);
+    background-color: rgba(var(--color-red-rgb), 0.07);
+    color: var(--text-error);
+}
+
+/* Skeleton bars keep the modal footprint while fetching. */
+.zotflow-csl-skeleton {
+    display: inline-block;
+    height: 0.85em;
+    border-radius: var(--radius-s);
+    background-color: var(--background-modifier-hover);
+    vertical-align: middle;
+}
+
+.zotflow-csl-skeleton--w35 {
+    width: 35%;
+}
+
+.zotflow-csl-skeleton--w50 {
+    width: 50%;
+}
+
+.zotflow-csl-skeleton--w60 {
+    width: 60%;
+}
+
+.zotflow-csl-skeleton--w70 {
+    width: 70%;
+}
+
+.zotflow-csl-skeleton--w80 {
+    width: 80%;
+}
+
+.is-loading .zotflow-csl-skeleton {
+    animation: zotflow-csl-skeleton-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes zotflow-csl-skeleton-pulse {
+    0%,
+    100% {
+        opacity: 0.45;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.zotflow-csl-modal-muted {
+    color: var(--text-muted);
+    font-size: var(--font-ui-smaller);
+    margin-top: var(--size-4-1);
+}
+
+.zotflow-csl-modal-citation {
+    color: var(--text-muted);
+    margin-bottom: var(--size-4-2);
+}
+
+.zotflow-csl-modal-bib {
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+/* The sample ships csl-bib-body markup; keep entries compact. */
+.zotflow-csl-modal-bib .csl-entry {
+    margin-bottom: var(--size-4-1);
+}
+
+/* Footer buttons: hide the empty label half so the control row spans the
+   full modal width -- otherwise a left-anchored button starts mid-modal. */
+.zotflow-csl-modal-buttons .setting-item-info {
+    display: none;
+}
+
+.zotflow-csl-modal-buttons .setting-item-control {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.zotflow-csl-modal-buttons .zotflow-csl-btn-left {
+    margin-right: auto;
+}
+
+/* -- Responsive (mirrors the Activity Center breakpoints) -- */
+
+@media (max-width: 600px) {
+    .zotflow-csl-section--locales {
+        max-height: 45%;
+    }
+
+    /* Header: drop the quiet "Checked" text first. */
+    .zotflow-csl-checked {
+        display: none;
+    }
+
+    /* Rows wrap: info takes the full first line, actions drop below. */
+    .zotflow-csl-row {
+        flex-wrap: wrap;
+        row-gap: var(--size-4-1);
+    }
+
+    .zotflow-csl-row-info {
+        flex: 1 1 calc(100% - 22px);
+    }
+
+    .zotflow-csl-row-actions {
+        margin-left: auto;
+    }
+
+    .zotflow-csl-row-title-line {
+        flex-wrap: wrap;
+    }
+
+    .zotflow-csl-alias-list {
+        margin-left: var(--size-4-3);
+        padding-left: var(--size-4-2);
+    }
+
+    .zotflow-csl-alias-id {
+        display: none;
+    }
+
+    .zotflow-csl-details-label {
+        width: 6em;
+    }
+
+    .zotflow-csl-modal-bib {
+        max-height: 140px;
+    }
+}

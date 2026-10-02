@@ -1,0 +1,26 @@
+{
+  "userIgnoreFilters": null,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "Attachments",
+  "trashOption": "system",
+  "deleteUnlinkedAttachments": "always",
+  "showUnsupportedFiles": true,
+  "alwaysUpdateLinks": true,
+  "showInlineTitle": true,
+  "defaultViewMode": "source",
+  "livePreview": true,
+  "strictLineBreaks": true,
+  "propertiesInDocument": "visible",
+  "foldHeading": true,
+  "showLineNumber": false,
+  "showIndentGuide": true,
+  "rightToLeft": false,
+  "promptDelete": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 31
+  }
+}

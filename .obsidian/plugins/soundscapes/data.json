@@ -1,0 +1,56 @@
+{
+  "soundscape": "MY_MUSIC",
+  "volume": 2,
+  "autoplay": true,
+  "scrollSongTitle": true,
+  "customSoundscapes": [],
+  "myMusicIndex": [
+    {
+      "fileName": "A Science Majors Playlist.mp3",
+      "fullPath": "G:\\My Drive\\GateEC\\.soundscapes\\A Science Majors Playlist.mp3",
+      "title": "A Science Majors Playlist",
+      "duration": 3597.3485714285716
+    },
+    {
+      "fileName": "Ambient Electronica.mp3",
+      "fullPath": "G:\\My Drive\\GateEC\\.soundscapes\\Ambient Electronica.mp3",
+      "title": "Ambient Electronica",
+      "duration": 4799.268571428572
+    },
+    {
+      "fileName": "Hour Of Concentration.mp3",
+      "fullPath": "G:\\My Drive\\GateEC\\.soundscapes\\Hour Of Concentration.mp3",
+      "title": "Hour Of Concentration",
+      "duration": 3597.2702040816325
+    },
+    {
+      "fileName": "Interstellar Soundtrack.mp3",
+      "fullPath": "G:\\My Drive\\GateEC\\.soundscapes\\Interstellar Soundtrack.mp3",
+      "title": "Interstellar Soundtrack",
+      "duration": 3600.143673469388
+    },
+    {
+      "fileName": "The Knight Quiet Forest.mp3",
+      "fullPath": "G:\\My Drive\\GateEC\\.soundscapes\\The Knight Quiet Forest.mp3",
+      "title": "The Knight Quiet Forest",
+      "duration": 4181.5771428571425
+    },
+    {
+      "fileName": "Lofi Study Session.mp3",
+      "fullPath": "G:\\My Drive\\GateEC\\.soundscapes\\Lofi Study Session.mp3",
+      "title": "12 A.M Study Session 📚 [lofi hip hop]",
+      "artist": "Lofi Girl",
+      "duration": 3448.2155102040815
+    },
+    {
+      "fileName": "Gamma Binaural Beats.mp3",
+      "fullPath": "G:\\My Drive\\GateEC\\.soundscapes\\.archive\\Gamma Binaural Beats.mp3",
+      "title": "Gamma Binaural Beats",
+      "duration": 3600.065306122449
+    }
+  ],
+  "myMusicFolderPath": "G:\\My Drive\\GateEC\\.soundscapes",
+  "reindexFrequency": "5",
+  "myMusicShuffle": false,
+  "currentTrackIndex": 1
+}

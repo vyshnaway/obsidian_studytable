@@ -1,0 +1,73 @@
+{
+  "fonts": [
+    {
+      "id": "ia-writer-mono",
+      "family": "iA Writer Mono",
+      "subsets": [
+        "latin"
+      ],
+      "styles": [
+        "normal",
+        "italic"
+      ],
+      "weights": [
+        400,
+        700
+      ],
+      "isActive": true
+    },
+    {
+      "id": "ia-writer-duo",
+      "family": "iA Writer Duo",
+      "subsets": [
+        "latin"
+      ],
+      "styles": [
+        "normal",
+        "italic"
+      ],
+      "weights": [
+        400,
+        700
+      ],
+      "isActive": true
+    },
+    {
+      "id": "ia-writer-quattro",
+      "family": "iA Writer Quattro",
+      "subsets": [
+        "latin"
+      ],
+      "styles": [
+        "normal",
+        "italic"
+      ],
+      "weights": [
+        400,
+        700
+      ],
+      "isActive": true
+    }
+  ],
+  "interfaceFonts": [
+    {
+      "id": "ia-writer-quattro",
+      "family": "iA Writer Quattro",
+      "precedence": 0
+    }
+  ],
+  "textFonts": [
+    {
+      "id": "ia-writer-duo",
+      "family": "iA Writer Duo",
+      "precedence": 0
+    }
+  ],
+  "monospaceFonts": [
+    {
+      "id": "ia-writer-mono",
+      "family": "iA Writer Mono",
+      "precedence": 0
+    }
+  ]
+}

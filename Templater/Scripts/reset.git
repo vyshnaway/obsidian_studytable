@@ -1,0 +1,17 @@
+# 1. Create and switch to a new temporary branch without history
+git checkout --orphan temp_branch
+
+# 2. Stage all current files
+git add -A
+
+# 3. Commit all files as the new initial state
+git commit -m "Initial commit"
+
+# 4. Delete the master branch
+git branch -D master
+
+# 5. Rename the temporary branch to master
+git branch -m master
+
+# 6. Force push the new single-commit history to remote (removes old remote history)
+git push -f origin master
