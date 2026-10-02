@@ -15,8 +15,8 @@
               "state": {
                 "file": "1.2 (12-14) Mathematics/5.1 Complex Variables.pdf"
               },
-              "icon": "book-open",
-              "title": "5.1 Complex Variables.pdf"
+              "icon": "lucide-ghost",
+              "title": "zotflow-local-zotero-reader-view"
             }
           },
           {
@@ -27,8 +27,8 @@
               "state": {
                 "file": "1.1 (14-15) Aptitude/0.0 AIO.pdf"
               },
-              "icon": "book-open",
-              "title": "0.0 AIO.pdf"
+              "icon": "lucide-ghost",
+              "title": "zotflow-local-zotero-reader-view"
             }
           },
           {
@@ -39,8 +39,8 @@
               "state": {
                 "file": "1.1 (14-15) Aptitude/0.1 Permutations and Combinations.pdf"
               },
-              "icon": "book-open",
-              "title": "0.1 Permutations and Combinations.pdf"
+              "icon": "lucide-ghost",
+              "title": "zotflow-local-zotero-reader-view"
             }
           },
           {
@@ -51,32 +51,60 @@
               "state": {
                 "file": "1.1 (14-15) Aptitude/1.1 Number System.pdf"
               },
-              "icon": "book-open",
-              "title": "1.1 Number System.pdf"
+              "icon": "lucide-ghost",
+              "title": "zotflow-local-zotero-reader-view"
             }
-          }
-        ]
-      },
-      {
-        "id": "ade671a54ca8584b",
-        "type": "tabs",
-        "children": [
+          },
           {
-            "id": "65d6af5e5b19d0c7",
+            "id": "0746cb08b917a9af",
+            "type": "leaf",
+            "state": {
+              "type": "zotflow-local-zotero-reader-view",
+              "state": {
+                "file": "# MathsX/A. Probability & Statistics.pdf"
+              },
+              "icon": "lucide-ghost",
+              "title": "zotflow-local-zotero-reader-view"
+            }
+          },
+          {
+            "id": "8b8ed95cf962bc5c",
+            "type": "leaf",
+            "state": {
+              "type": "zotflow-local-zotero-reader-view",
+              "state": {
+                "file": "2.2 (05-08) Control Systems/1.1 Basics of Control system.pdf"
+              },
+              "icon": "lucide-ghost",
+              "title": "zotflow-local-zotero-reader-view"
+            }
+          },
+          {
+            "id": "ead9eb0343e2e4b2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Templater/$ Git Recommit Orphan.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false,
-                "backlinks": false
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
-              "title": "$ Git Recommit Orphan"
+              "title": "Untitled"
             }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -100,21 +128,6 @@
             }
           },
           {
-            "id": "9f273b1811df48c9",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
-            }
-          },
-          {
             "id": "3676fb8c70b93ad6",
             "type": "leaf",
             "state": {
@@ -130,13 +143,22 @@
               "icon": "lucide-search",
               "title": "Search"
             }
+          },
+          {
+            "id": "75d82e6d442f3d7b",
+            "type": "leaf",
+            "state": {
+              "type": "zotflow-tree-view",
+              "state": {},
+              "icon": "library",
+              "title": "Zotero Library"
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 308.9663276672363
+    "width": 308.224609375
   },
   "right": {
     "id": "7747348a48898811",
@@ -152,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Templater/$ Git Recommit Orphan.md",
+                "file": "# AptudX/Aptitude Questions.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -160,31 +182,70 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
+          },
+          {
+            "id": "b4a9a2e1d190f0bb",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Untitled.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 349.5,
-    "collapsed": true
+    "width": 349.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "ocr-extractor:OCR Extractor": false,
-      "switcher:Open quick switcher": true,
-      "notebook-navigator:Notebook Navigator": true,
       "daily-notes:Open today's daily note": false,
       "command-palette:Open command palette": true,
+      "soundscapes:Soundscapes: My Music": false,
+      "notebook-navigator:Notebook Navigator": false,
       "zotflow:ZotFlow: Activity Center": true,
       "zotflow:ZotFlow: Search Zotero": true,
-      "soundscapes:Soundscapes: My Music": false,
-      "templater-obsidian:Templater": false,
-      "bases:Create new base": false,
-      "canvas:Create new canvas": true
+      "ocr-extractor:OCR Extractor": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "65d6af5e5b19d0c7",
+  "active": "ead9eb0343e2e4b2",
   "lastOpenFiles": [
+    "StudyTable.md",
+    "Untitled.md",
+    "# MathsX/A. Calculus.md",
+    "# MathsX/attachments/Pasted image 20261002090758.png",
+    "# MathsX/attachments",
+    "Pasted image 20261002090349.png",
+    "# MathsX/{{NAME}}/Pasted image 20261002090309.png",
+    "# MathsX/{{NAME}}",
+    "# AptudX/Untitled.md",
+    "# AptudX/Aptitude Questions.md",
+    "Untitled.base",
+    "Caledar.base",
+    "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
+    "Operon/Demo Workspace/Operon Command Palette.md",
+    "Operon/Demo Workspace/Operon Basics Project.md",
+    "@Journals/2026/10/2026-10-02.md",
+    "Operon/Demo Workspace",
+    "Operon/Tasks",
+    "Operon/Tables/Default table.table",
+    "Operon/Tables",
+    "Operon",
+    "@Journals/2026/10/2026-10-03.md",
+    "# AptudX/# AptudX.md",
     "1.1 (14-15) Aptitude/1.1 (14-15) Aptitude.md",
     "Templater/$ Git Recommit Orphan.md",
     "1.1 (14-15) Aptitude/0.1 Permutations and Combinations.md",
@@ -193,13 +254,7 @@
     "Templater/Templater.md",
     "1.4 (02-04) Computer Architecture/1.4 (02-04) Computer Architecture.md",
     "Templater/$ Open Vault on VSCode.md",
-    "Templater",
-    "Templater/Scripts/reset.git",
-    "Templater/Scripts/mintpdf.py",
-    "Templater/Scripts/marksman.py",
-    "Templater/Scripts/audiopress.py",
     "Templater/Scripts/Scripts.md",
-    "Templater/Scripts",
     "Templater/Auto Create Bin MDs.md",
     "Templater/Compress Audio Files.md",
     "Templater/Compress PDF Files.md",
@@ -207,22 +262,8 @@
     "Templater/Scripts/Scripts.md",
     "@Documents/SIGNATURE.md",
     "@Documents/PHOTOGRAPH.md",
-    "3.2 (08-11) Analog Electronics/Y42628138400.md",
-    "3.4 (10-13) Communication/4.2 Angle Modulation 1.md",
-    "1.4 (02-04) Computer Architecture/4.1 Number Representation 1.md",
-    "df/df.md",
-    "@Journals/@Journals.md",
-    "df",
-    "af",
-    "asd",
-    "Y42628138400.md",
-    "README.md",
-    "@Journals/2026/10/2026-10-02.md",
-    "@Journals/2026/10/Untitled.md",
     "Untitled.canvas",
-    "@Journals/2026-10-01.md",
     "@Journals/@Journals.canvas",
-    "1.4 (02-04) Computer Architecture/4.1 Number Representation.md",
     "Untitled/Untitled.canvas",
     "Attachments/Pasted image 20261001223712.png",
     "Attachments/Pasted image 20261001173842.png",
@@ -230,9 +271,6 @@
     "Attachments/Pasted image 20261001172509.png",
     "Annotations/KZGY6UPQ.png",
     "Annotations/FRDSVDBY.png",
-    "Annotations/5VBR5WD3.png",
-    "Annotations/QJ42M7HM.png",
-    "Annotations/H283HDDA.png",
-    "Annotations/CB26QT7Y.png"
+    "Annotations/5VBR5WD3.png"
   ]
 }

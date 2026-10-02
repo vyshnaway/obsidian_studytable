@@ -1,10 +1,10 @@
 [
-  "terminal",
   "soundscapes",
   "notebook-navigator",
   "python-editor",
   "zotflow",
   "text-lens",
   "fontsource",
-  "ocr-extractor"
+  "ocr-extractor",
+  "templater-obsidian"
 ]

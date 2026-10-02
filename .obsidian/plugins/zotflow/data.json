@@ -190,7 +190,7 @@
         "pageIndex": 2,
         "scale": "page-width",
         "top": 96,
-        "left": -12,
+        "left": -7,
         "scrollMode": 0,
         "spreadMode": 0,
         "lastReadAloudPosition": null
@@ -526,8 +526,8 @@
       "primaryViewState": {
         "pageIndex": 0,
         "scale": "page-width",
-        "top": 817,
-        "left": -21,
+        "top": 815,
+        "left": -19,
         "scrollMode": 0,
         "spreadMode": 0,
         "lastReadAloudPosition": null
@@ -547,10 +547,10 @@
     },
     "1.1 (14-15) Aptitude/0.0 AIO.pdf": {
       "primaryViewState": {
-        "pageIndex": 2,
+        "pageIndex": 0,
         "scale": "page-width",
-        "top": 288,
-        "left": 10,
+        "top": 622,
+        "left": -5,
         "scrollMode": 0,
         "spreadMode": 0,
         "lastReadAloudPosition": null
@@ -953,7 +953,7 @@
         "pageIndex": 0,
         "scale": "page-width",
         "top": 842,
-        "left": -7,
+        "left": -9,
         "scrollMode": 0,
         "spreadMode": 0,
         "lastReadAloudPosition": null
@@ -1027,6 +1027,18 @@
         "scale": "page-width",
         "top": 807,
         "left": -18,
+        "scrollMode": 0,
+        "spreadMode": 0,
+        "lastReadAloudPosition": null
+      }
+    },
+    "# MathsX/A. Probability & Statistics.pdf": {
+      "secondaryViewState": null,
+      "primaryViewState": {
+        "pageIndex": 0,
+        "scale": "page-width",
+        "top": 842,
+        "left": -9,
         "scrollMode": 0,
         "spreadMode": 0,
         "lastReadAloudPosition": null

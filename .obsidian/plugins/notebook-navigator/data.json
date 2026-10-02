@@ -402,22 +402,22 @@
   "parentFolderClickRevealsFile": false,
   "showParentFolderColor": false,
   "showParentFolderIcon": false,
-  "calendarEnabled": true,
-  "calendarPlacement": "left-sidebar",
+  "calendarEnabled": false,
+  "calendarPlacement": "right-sidebar",
   "calendarConfirmBeforeCreate": false,
   "calendarShowHiddenItems": true,
   "calendarLocale": "system-default",
   "calendarWeekendDays": "sat-sun",
   "calendarMonthHeadingFormat": "full",
   "calendarHighlightToday": true,
-  "calendarShowFeatureImage": true,
-  "calendarShowTasks": true,
+  "calendarShowFeatureImage": false,
+  "calendarShowTasks": false,
   "calendarMonthHighlights": {},
   "calendarShowWeekNumber": true,
-  "calendarShowQuarter": false,
+  "calendarShowQuarter": true,
   "calendarShowOutsideMonthDays": true,
-  "calendarShowYearCalendar": true,
-  "calendarLeftPlacement": "navigation",
+  "calendarShowYearCalendar": false,
+  "calendarLeftPlacement": "below",
   "calendarWeeksToShow": 2,
   "calendarIntegrationMode": "daily-notes",
   "calendarPeriodicNotesLocaleSource": "calendar",
@@ -678,6 +678,21 @@
       "property": false
     },
     "1.1 (14-15) Aptitude/1.1 Number System.pdf": {
+      "folder": true,
+      "tag": false,
+      "property": false
+    },
+    "# MathsX/Q. Engineering Mathematics.pdf": {
+      "folder": true,
+      "tag": false,
+      "property": false
+    },
+    "# MathsX/Q. Engineering Mathematics.md": {
+      "folder": true,
+      "tag": false,
+      "property": false
+    },
+    "StudyTable.md": {
       "folder": true,
       "tag": false,
       "property": false
