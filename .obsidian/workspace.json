@@ -107,22 +107,12 @@
               "icon": "lucide-search",
               "title": "Search"
             }
-          },
-          {
-            "id": "75d82e6d442f3d7b",
-            "type": "leaf",
-            "state": {
-              "type": "zotflow-tree-view",
-              "state": {},
-              "icon": "library",
-              "title": "Zotero Library"
-            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 360.5
+    "width": 317.5
   },
   "right": {
     "id": "7747348a48898811",
@@ -150,22 +140,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 537.5
+    "width": 276.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
       "daily-notes:Open today's daily note": false,
       "command-palette:Open command palette": true,
       "soundscapes:Soundscapes: My Music": false,
-      "notebook-navigator:Notebook Navigator": false,
+      "notebook-navigator:Notebook Navigator": true,
       "zotflow:ZotFlow: Activity Center": true,
       "zotflow:ZotFlow: Search Zotero": true,
-      "ocr-extractor:OCR Extractor": false,
+      "ocr-extractor:OCR Extractor": true,
       "templater-obsidian:Templater": false,
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "a422482bf537d412",
+  "active": "6ec1ab1ac0bb88ba",
   "lastOpenFiles": [
     "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.3 Blood Relation.md",
     "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.5 Dice & Cubes.md",

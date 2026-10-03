@@ -22,7 +22,11 @@
 !**/.keep
 !**/.gitkeep
 
-# # Whitelist the Scripts directory and all its contents
+# Whitelist the Scripts directory and all its contents
 !Scripts/
 !Scripts/**
 Scripts/logs
+
+
+!Templates/
+!Templates/**
