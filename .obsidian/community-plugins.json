@@ -1,10 +1,9 @@
 [
   "soundscapes",
   "notebook-navigator",
-  "python-editor",
   "zotflow",
   "text-lens",
-  "fontsource",
   "ocr-extractor",
+  "obsidian-tasks-plugin",
   "templater-obsidian"
 ]

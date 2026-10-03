@@ -4,107 +4,71 @@
     "type": "split",
     "children": [
       {
-        "id": "af91134d15b38c23",
+        "id": "988b4b23c7fe9d27",
         "type": "tabs",
         "children": [
           {
-            "id": "ee95f1e74e8a0834",
-            "type": "leaf",
-            "state": {
-              "type": "zotflow-local-zotero-reader-view",
-              "state": {
-                "file": "1.2 (12-14) Mathematics/5.1 Complex Variables.pdf"
-              },
-              "icon": "lucide-ghost",
-              "title": "zotflow-local-zotero-reader-view"
-            }
-          },
-          {
-            "id": "825316a7873f009b",
+            "id": "a65e6e23190373c4",
             "type": "leaf",
             "state": {
               "type": "zotflow-local-zotero-reader-view",
               "state": {
                 "file": "1.1 (14-15) Aptitude/0.0 AIO.pdf"
               },
-              "icon": "lucide-ghost",
-              "title": "zotflow-local-zotero-reader-view"
+              "icon": "book-open",
+              "title": "0.0 AIO.pdf"
             }
           },
           {
-            "id": "c4b1bef3981f5f00",
+            "id": "24e22256279b2083",
             "type": "leaf",
             "state": {
               "type": "zotflow-local-zotero-reader-view",
               "state": {
-                "file": "1.1 (14-15) Aptitude/0.1 Permutations and Combinations.pdf"
+                "file": "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.1 Direction Sense Test.pdf"
               },
-              "icon": "lucide-ghost",
-              "title": "zotflow-local-zotero-reader-view"
+              "icon": "book-open",
+              "title": "3.1 Direction Sense Test.pdf"
             }
           },
           {
-            "id": "9de4516de0ddb4b4",
+            "id": "ce8a57cd6e762294",
             "type": "leaf",
             "state": {
               "type": "zotflow-local-zotero-reader-view",
               "state": {
-                "file": "1.1 (14-15) Aptitude/1.1 Number System.pdf"
+                "file": "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.5 Dice & Cubes.pdf"
               },
-              "icon": "lucide-ghost",
-              "title": "zotflow-local-zotero-reader-view"
+              "icon": "book-open",
+              "title": "3.5 Dice & Cubes.pdf"
             }
           },
           {
-            "id": "0746cb08b917a9af",
+            "id": "340c1df5d289545f",
             "type": "leaf",
             "state": {
               "type": "zotflow-local-zotero-reader-view",
               "state": {
-                "file": "# MathsX/A. Probability & Statistics.pdf"
+                "file": "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.2 Seating Arrangement.pdf"
               },
-              "icon": "lucide-ghost",
-              "title": "zotflow-local-zotero-reader-view"
+              "icon": "book-open",
+              "title": "3.2 Seating Arrangement.pdf"
             }
           },
           {
-            "id": "8b8ed95cf962bc5c",
+            "id": "a422482bf537d412",
             "type": "leaf",
             "state": {
               "type": "zotflow-local-zotero-reader-view",
               "state": {
-                "file": "2.2 (05-08) Control Systems/1.1 Basics of Control system.pdf"
+                "file": "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.3 Blood Relation.pdf"
               },
-              "icon": "lucide-ghost",
-              "title": "zotflow-local-zotero-reader-view"
-            }
-          },
-          {
-            "id": "ead9eb0343e2e4b2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Untitled"
+              "icon": "book-open",
+              "title": "3.3 Blood Relation.pdf"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -158,7 +122,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 308.224609375
+    "width": 360.5
   },
   "right": {
     "id": "7747348a48898811",
@@ -174,7 +138,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "# AptudX/Aptitude Questions.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -182,32 +145,12 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
-          },
-          {
-            "id": "b4a9a2e1d190f0bb",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Untitled.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 349.5
+    "width": 537.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -218,59 +161,59 @@
       "zotflow:ZotFlow: Activity Center": true,
       "zotflow:ZotFlow: Search Zotero": true,
       "ocr-extractor:OCR Extractor": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "obsidian42-brat:BRAT": false
     }
   },
-  "active": "ead9eb0343e2e4b2",
+  "active": "a422482bf537d412",
   "lastOpenFiles": [
-    "StudyTable.md",
-    "Untitled.md",
-    "# MathsX/A. Calculus.md",
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.3 Blood Relation.md",
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.5 Dice & Cubes.md",
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.2 Seating Arrangement.md",
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.1 Direction Sense Test.pdf",
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.1 Direction Sense Test.md",
+    "1.1 (14-15) Aptitude/3.1 Direction Sense Test.md",
+    "1.1 (14-15) Aptitude/0.1 Permutations and Combinations.pdf",
+    "1.1 (14-15) Aptitude/0.2 Probability.pdf",
+    "1.1 (14-15) Aptitude/0.2 Probability.md",
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.6 Calendar Full Notes.md",
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.6 Calendar Full Notes.pdf",
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.6 Calendar Full Notes.zf.json",
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.7 Data Interpretation.md",
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.7 Data Interpretation.pdf",
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.8 Syllogism.md",
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.8 Syllogism.pdf",
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.5 Dice & Cubes.pdf",
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.4 Number Series.pdf",
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.4 Number Series.md",
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.3 Blood Relation.pdf",
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/0.2 Probability.md",
+    "1.1 (14-15) Aptitude/2. Algebra & Geometry/2.4 Geometry & Mensuration.md",
+    "1.1 (14-15) Aptitude/2. Algebra & Geometry/2.3 Sequence & Series.md",
+    "1.1 (14-15) Aptitude/2. Algebra & Geometry/2.2 Venn Diagram.md",
+    "1.1 (14-15) Aptitude/2. Algebra & Geometry/2.1 Surds, Indices & Logarithm.md",
+    "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.1 (14-15) Aptitude.md",
+    "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.3 Averages.md",
+    "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.2 Percentage & Profit-Loss.md",
+    "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.7 Time & Distance and Boats & Streams.md",
+    "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.4 Ratio, Proportion, Partnership, Mixtures & Allegations.md",
+    "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.6 Pipes & Cisterns.md",
+    "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.5 Time & Work.md",
+    "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.1 Number System.md",
+    "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.7 Time & Distance and Boats & Streams.md",
+    "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.6 Pipes & Cisterns.md",
+    "Annotations/YMACBYFK.png",
+    "Annotations/2J4FW2YJ.png",
+    "Annotations/KHPFMMEQ.png",
     "# MathsX/attachments/Pasted image 20261002090758.png",
-    "# MathsX/attachments",
     "Pasted image 20261002090349.png",
     "# MathsX/{{NAME}}/Pasted image 20261002090309.png",
-    "# MathsX/{{NAME}}",
-    "# AptudX/Untitled.md",
-    "# AptudX/Aptitude Questions.md",
-    "Untitled.base",
-    "Caledar.base",
-    "Operon/Demo Workspace/Set Up Your Obsidian Vault with Operon.md",
-    "Operon/Demo Workspace/Operon Command Palette.md",
-    "Operon/Demo Workspace/Operon Basics Project.md",
-    "@Journals/2026/10/2026-10-02.md",
-    "Operon/Demo Workspace",
-    "Operon/Tasks",
-    "Operon/Tables/Default table.table",
-    "Operon/Tables",
-    "Operon",
-    "@Journals/2026/10/2026-10-03.md",
-    "# AptudX/# AptudX.md",
-    "1.1 (14-15) Aptitude/1.1 (14-15) Aptitude.md",
-    "Templater/$ Git Recommit Orphan.md",
-    "1.1 (14-15) Aptitude/0.1 Permutations and Combinations.md",
-    "Templater/$ Open Vault in VSCode.md",
-    "Templater/Scripts/$ template.py",
-    "Templater/Templater.md",
-    "1.4 (02-04) Computer Architecture/1.4 (02-04) Computer Architecture.md",
-    "Templater/$ Open Vault on VSCode.md",
-    "Templater/Scripts/Scripts.md",
-    "Templater/Auto Create Bin MDs.md",
-    "Templater/Compress Audio Files.md",
-    "Templater/Compress PDF Files.md",
-    "Templater/Resolve Folder Notes.md",
-    "Templater/Scripts/Scripts.md",
-    "@Documents/SIGNATURE.md",
-    "@Documents/PHOTOGRAPH.md",
     "Untitled.canvas",
     "@Journals/@Journals.canvas",
     "Untitled/Untitled.canvas",
     "Attachments/Pasted image 20261001223712.png",
     "Attachments/Pasted image 20261001173842.png",
     "Attachments/Pasted image 20261001172548.png",
-    "Attachments/Pasted image 20261001172509.png",
-    "Annotations/KZGY6UPQ.png",
-    "Annotations/FRDSVDBY.png",
-    "Annotations/5VBR5WD3.png"
+    "Attachments/Pasted image 20261001172509.png"
   ]
 }

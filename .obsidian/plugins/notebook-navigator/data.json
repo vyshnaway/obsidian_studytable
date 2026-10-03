@@ -37,7 +37,8 @@
         "/ZotFlow",
         "/@Archive",
         "/@Documents",
-        "/Templater"
+        "/Templater",
+        "/Templates"
       ],
       "descendantExcludedFolders": [],
       "hiddenTags": [],
@@ -98,14 +99,6 @@
         {
           "type": "note",
           "path": "1.4 (02-04) Computer Architecture/1.1 Computer Organization & Architecture.md"
-        },
-        {
-          "type": "note",
-          "path": "1.1 (14-15) Aptitude/1.1 Number System.pdf"
-        },
-        {
-          "type": "note",
-          "path": "1.1 (14-15) Aptitude/1.1 Number System.md"
         }
       ],
       "navRainbow": {
@@ -402,8 +395,8 @@
   "parentFolderClickRevealsFile": false,
   "showParentFolderColor": false,
   "showParentFolderIcon": false,
-  "calendarEnabled": false,
-  "calendarPlacement": "right-sidebar",
+  "calendarEnabled": true,
+  "calendarPlacement": "left-sidebar",
   "calendarConfirmBeforeCreate": false,
   "calendarShowHiddenItems": true,
   "calendarLocale": "system-default",
@@ -411,7 +404,7 @@
   "calendarMonthHeadingFormat": "full",
   "calendarHighlightToday": true,
   "calendarShowFeatureImage": false,
-  "calendarShowTasks": false,
+  "calendarShowTasks": true,
   "calendarMonthHighlights": {},
   "calendarShowWeekNumber": true,
   "calendarShowQuarter": true,
@@ -672,16 +665,6 @@
       "tag": false,
       "property": false
     },
-    "1.1 (14-15) Aptitude/1.1 Number System.md": {
-      "folder": true,
-      "tag": false,
-      "property": false
-    },
-    "1.1 (14-15) Aptitude/1.1 Number System.pdf": {
-      "folder": true,
-      "tag": false,
-      "property": false
-    },
     "# MathsX/Q. Engineering Mathematics.pdf": {
       "folder": true,
       "tag": false,
@@ -693,6 +676,41 @@
       "property": false
     },
     "StudyTable.md": {
+      "folder": true,
+      "tag": false,
+      "property": false
+    },
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.1 Direction Sense Test.pdf": {
+      "folder": true,
+      "tag": false,
+      "property": false
+    },
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.1 Direction Sense Test.md": {
+      "folder": true,
+      "tag": false,
+      "property": false
+    },
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.7 Data Interpretation.md": {
+      "folder": true,
+      "tag": false,
+      "property": false
+    },
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.7 Data Interpretation.pdf": {
+      "folder": true,
+      "tag": false,
+      "property": false
+    },
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.5 Dice & Cubes.md": {
+      "folder": true,
+      "tag": false,
+      "property": false
+    },
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.5 Dice & Cubes.pdf": {
+      "folder": true,
+      "tag": false,
+      "property": false
+    },
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.2 Seating Arrangement.md": {
       "folder": true,
       "tag": false,
       "property": false

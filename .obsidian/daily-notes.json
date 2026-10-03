@@ -1,4 +1,5 @@
 {
   "folder": "@Journals",
-  "format": "YYYY/MM/YYYY-MM-DD"
+  "format": "YYYY/MM/DD",
+  "template": "Templates/Daily Note.md"
 }
