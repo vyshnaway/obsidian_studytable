@@ -10,65 +10,44 @@
           {
             "id": "a65e6e23190373c4",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "zotflow-local-zotero-reader-view",
               "state": {
                 "file": "1.1 (14-15) Aptitude/0.0 AIO.pdf"
               },
+              "pinned": true,
               "icon": "book-open",
               "title": "0.0 AIO.pdf"
             }
           },
           {
-            "id": "24e22256279b2083",
+            "id": "c78510f6753306ac",
             "type": "leaf",
             "state": {
-              "type": "zotflow-local-zotero-reader-view",
-              "state": {
-                "file": "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.1 Direction Sense Test.pdf"
-              },
-              "icon": "book-open",
-              "title": "3.1 Direction Sense Test.pdf"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           },
           {
-            "id": "ce8a57cd6e762294",
+            "id": "a64b7a56b0ef9493",
             "type": "leaf",
             "state": {
-              "type": "zotflow-local-zotero-reader-view",
+              "type": "markdown",
               "state": {
-                "file": "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.5 Dice & Cubes.pdf"
+                "file": "StudyTable.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "book-open",
-              "title": "3.5 Dice & Cubes.pdf"
-            }
-          },
-          {
-            "id": "340c1df5d289545f",
-            "type": "leaf",
-            "state": {
-              "type": "zotflow-local-zotero-reader-view",
-              "state": {
-                "file": "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.2 Seating Arrangement.pdf"
-              },
-              "icon": "book-open",
-              "title": "3.2 Seating Arrangement.pdf"
-            }
-          },
-          {
-            "id": "a422482bf537d412",
-            "type": "leaf",
-            "state": {
-              "type": "zotflow-local-zotero-reader-view",
-              "state": {
-                "file": "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.3 Blood Relation.pdf"
-              },
-              "icon": "book-open",
-              "title": "3.3 Blood Relation.pdf"
+              "icon": "lucide-file",
+              "title": "StudyTable"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -128,6 +107,7 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "StudyTable.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -156,8 +136,11 @@
       "obsidian42-brat:BRAT": false
     }
   },
-  "active": "6ec1ab1ac0bb88ba",
+  "active": "a64b7a56b0ef9493",
   "lastOpenFiles": [
+    "README.md",
+    "StudyTable.md",
+    "Templates/Daily Note.md",
     "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.3 Blood Relation.md",
     "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.5 Dice & Cubes.md",
     "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.2 Seating Arrangement.md",
@@ -191,8 +174,6 @@
     "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.6 Pipes & Cisterns.md",
     "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.5 Time & Work.md",
     "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.1 Number System.md",
-    "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.7 Time & Distance and Boats & Streams.md",
-    "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.6 Pipes & Cisterns.md",
     "Annotations/YMACBYFK.png",
     "Annotations/2J4FW2YJ.png",
     "Annotations/KHPFMMEQ.png",
