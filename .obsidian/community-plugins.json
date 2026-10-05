@@ -1,9 +1,12 @@
 [
-  "soundscapes",
   "notebook-navigator",
   "zotflow",
   "text-lens",
   "ocr-extractor",
   "obsidian-tasks-plugin",
-  "templater-obsidian"
+  "templater-obsidian",
+  "soundscapes",
+  "quick-peek-sidebar",
+  "gate-calculator",
+  "advanced-pdf-export"
 ]

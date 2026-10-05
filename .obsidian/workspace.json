@@ -8,31 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a65e6e23190373c4",
+            "id": "e0687b71fee138d5",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "zotflow-local-zotero-reader-view",
               "state": {
-                "file": "1.1 (14-15) Aptitude/0.0 AIO.pdf"
+                "file": "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.6 Pipes & Cisterns.pdf"
               },
-              "pinned": true,
               "icon": "book-open",
-              "title": "0.0 AIO.pdf"
+              "title": "1.6 Pipes & Cisterns.pdf"
             }
           },
           {
-            "id": "c78510f6753306ac",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
-            "id": "a64b7a56b0ef9493",
+            "id": "ef47d65966b7f64d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -47,7 +35,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,34 +74,84 @@
               "icon": "lucide-search",
               "title": "Search"
             }
+          },
+          {
+            "id": "e35cb16e3dc0a6e9",
+            "type": "leaf",
+            "state": {
+              "type": "soundscapes-react-view",
+              "state": {},
+              "icon": "music",
+              "title": "Soundscapes: My Music"
+            }
+          },
+          {
+            "id": "451aea1414d3e304",
+            "type": "leaf",
+            "state": {
+              "type": "zotflow-tree-view",
+              "state": {},
+              "icon": "library",
+              "title": "Zotero Library"
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 317.5
+    "width": 928.5
   },
   "right": {
     "id": "7747348a48898811",
     "type": "split",
     "children": [
       {
-        "id": "84959e20140444d5",
+        "id": "488b12dea42e02c5",
         "type": "tabs",
         "children": [
           {
-            "id": "c12dfae53eda555c",
+            "id": "0e9955c57fc3b91e",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "StudyTable.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
               "title": "Outline"
+            }
+          },
+          {
+            "id": "acb6ff5d5140cb95",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "41d88f9c28727168",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
             }
           }
         ]
@@ -126,66 +164,67 @@
   "left-ribbon": {
     "hiddenItems": {
       "daily-notes:Open today's daily note": false,
-      "command-palette:Open command palette": true,
+      "ocr-extractor:OCR Extractor": false,
       "soundscapes:Soundscapes: My Music": false,
       "notebook-navigator:Notebook Navigator": true,
       "zotflow:ZotFlow: Activity Center": true,
       "zotflow:ZotFlow: Search Zotero": true,
-      "ocr-extractor:OCR Extractor": true,
       "templater-obsidian:Templater": false,
-      "obsidian42-brat:BRAT": false
+      "gate-calculator:Toggle GATE Calculator": true,
+      "command-palette:Open command palette": false,
+      "remotely-save:Remotely Save": false
     }
   },
-  "active": "a64b7a56b0ef9493",
+  "active": "ef47d65966b7f64d",
   "lastOpenFiles": [
-    "README.md",
-    "StudyTable.md",
-    "Templates/Daily Note.md",
-    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.3 Blood Relation.md",
-    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.5 Dice & Cubes.md",
-    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.2 Seating Arrangement.md",
-    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.1 Direction Sense Test.pdf",
-    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.1 Direction Sense Test.md",
-    "1.1 (14-15) Aptitude/3.1 Direction Sense Test.md",
-    "1.1 (14-15) Aptitude/0.1 Permutations and Combinations.pdf",
-    "1.1 (14-15) Aptitude/0.2 Probability.pdf",
-    "1.1 (14-15) Aptitude/0.2 Probability.md",
-    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.6 Calendar Full Notes.md",
-    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.6 Calendar Full Notes.pdf",
-    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.6 Calendar Full Notes.zf.json",
-    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.7 Data Interpretation.md",
-    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.7 Data Interpretation.pdf",
-    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.8 Syllogism.md",
-    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.8 Syllogism.pdf",
-    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.5 Dice & Cubes.pdf",
-    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.4 Number Series.pdf",
-    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.4 Number Series.md",
-    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.3 Blood Relation.pdf",
-    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/0.2 Probability.md",
-    "1.1 (14-15) Aptitude/2. Algebra & Geometry/2.4 Geometry & Mensuration.md",
-    "1.1 (14-15) Aptitude/2. Algebra & Geometry/2.3 Sequence & Series.md",
-    "1.1 (14-15) Aptitude/2. Algebra & Geometry/2.2 Venn Diagram.md",
-    "1.1 (14-15) Aptitude/2. Algebra & Geometry/2.1 Surds, Indices & Logarithm.md",
-    "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.1 (14-15) Aptitude.md",
-    "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.3 Averages.md",
-    "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.2 Percentage & Profit-Loss.md",
-    "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.7 Time & Distance and Boats & Streams.md",
-    "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.4 Ratio, Proportion, Partnership, Mixtures & Allegations.md",
+    "Templater/Scripts/pagecount.py",
+    "Templater/Scripts/page-counter.md",
+    "Annotations/K7I94RWZ.png",
+    "Annotations/3EWY6ZFM.png",
+    "ZotFlow/Local/@3.2 Seating Arrangement.md",
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.2 Seating Arrangement.zf.json",
+    "Annotations/4HRMPCSZ.png",
     "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.6 Pipes & Cisterns.md",
-    "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.5 Time & Work.md",
-    "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.1 Number System.md",
-    "Annotations/YMACBYFK.png",
-    "Annotations/2J4FW2YJ.png",
-    "Annotations/KHPFMMEQ.png",
-    "# MathsX/attachments/Pasted image 20261002090758.png",
-    "Pasted image 20261002090349.png",
-    "# MathsX/{{NAME}}/Pasted image 20261002090309.png",
+    "Annotations/K9Y8GVFY.png",
+    "Annotations/Z8SAFIJ8.png",
+    "Annotations/J4W5KULY.png",
+    "Annotations/EEXDLPPM.png",
+    "Annotations/F26ZAVNU.png",
+    "Annotations/CTIQIHTK.png",
+    "Annotations/UE2A522A.png",
+    "ZotFlow/Local/@3.3 Blood Relation.md",
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.3 Blood Relation.zf.json",
+    "ZotFlow/Local/@2.2 Venn Diagram.md",
+    "1.1 (14-15) Aptitude/2. Algebra & Geometry/2.2 Venn Diagram.zf.json",
+    "1.1 (14-15) Aptitude/1.1 (14-15) Aptitude.md",
+    "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.1 (14-15) Aptitude.md",
+    "ZotFlow/Local/@2.3 Sequence & Series.md",
+    "1.1 (14-15) Aptitude/2. Algebra & Geometry/2.3 Sequence & Series.zf.json",
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.2 Seating Arrangement.md",
+    "ZotFlow/Local/@2.1 Surds, Indices & Logarithm.md",
+    "1.1 (14-15) Aptitude/2. Algebra & Geometry/2.1 Surds, Indices & Logarithm.zf.json",
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.6 Calendar Full Notes.md",
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.8 Syllogism.md",
+    "1.1 (14-15) Aptitude/3. Reasoning, Spacial Aptitude & DI/3.3 Blood Relation.md",
+    "ZotFlow/Local/@3.6 Calendar Full Notes (1).md",
+    "ZotFlow/Local/@1.6 Pipes & Cisterns.md",
+    "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.6 Pipes & Cisterns.zf.json",
+    "ZotFlow/Local/@1.3 Averages.md",
+    "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.3 Averages.zf.json",
+    "ZotFlow/Local/@1.2 Percentage & Profit-Loss.md",
+    "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.2 Percentage & Profit-Loss.zf.json",
+    "ZotFlow/Local/@1.1 Number System (1).md",
+    "पश्चिमघट्टानां विनाशः तस्य दुष्परिणामाश्च.md",
+    "2.3 (08-11) Signals and Systems/1.1 Basics of Signals.md",
+    "StudyTable.md",
+    "Templater/Scripts/Scripts.md",
+    "@Journals/2026/10/04.md",
+    "1.2 (12-14) Mathematics/5.1 Complex Variables.md",
+    "Soundscapes/Lofi Study Session.mp3",
+    "Soundscapes/The Knight Quiet Forest.mp3",
+    "1.2 (12-14) Mathematics/1.2 (12-14) Mathematics.md",
     "Untitled.canvas",
     "@Journals/@Journals.canvas",
-    "Untitled/Untitled.canvas",
-    "Attachments/Pasted image 20261001223712.png",
-    "Attachments/Pasted image 20261001173842.png",
-    "Attachments/Pasted image 20261001172548.png",
-    "Attachments/Pasted image 20261001172509.png"
+    "Untitled/Untitled.canvas"
   ]
 }

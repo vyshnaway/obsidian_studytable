@@ -1,0 +1,8 @@
+{
+  "theme": "system",
+  "defaultAngleMode": "deg",
+  "showRibbonIcon": true,
+  "showStatusIcon": true,
+  "showInCommandPalette": false,
+  "autoCloseBrackets": true
+}

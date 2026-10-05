@@ -1,5 +1,6 @@
 {
   "pinned": [
-    "text-lens:ocr-current-note"
+    "text-lens:ocr-current-note",
+    "advanced-pdf-export:open-panel"
   ]
 }

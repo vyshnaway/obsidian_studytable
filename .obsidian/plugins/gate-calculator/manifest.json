@@ -1,0 +1,10 @@
+{
+	"id": "gate-calculator",
+	"name": "GATE Calculator",
+	"version": "1.0.1",
+	"minAppVersion": "1.8.0",
+	"description": "A scientific calculator.",
+	"author": "Anand Baghel",
+	"authorUrl": "https://github.com/anandrajbaghel",
+	"isDesktopOnly": true
+}
