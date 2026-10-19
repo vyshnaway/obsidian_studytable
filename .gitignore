@@ -12,9 +12,6 @@
 !.obsidian/
 !.obsidian/**
 
-!.soundscapes/
-!.soundscapes/**
-
 # Allow Git to inspect top-level directories for contents
 !*/
 
@@ -30,3 +27,9 @@ Scripts/logs
 
 !Templates/
 !Templates/**
+
+!Templater/
+!Templater/**
+
+!Soundscapes/
+!Soundscapes/**
