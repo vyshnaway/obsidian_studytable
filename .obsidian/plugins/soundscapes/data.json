@@ -1,7 +1,7 @@
 {
   "soundscape": "MY_MUSIC",
-  "volume": 13,
-  "autoplay": false,
+  "volume": 1,
+  "autoplay": true,
   "scrollSongTitle": true,
   "customSoundscapes": [],
   "myMusicIndex": [
@@ -45,5 +45,5 @@
   "myMusicFolderPath": "G:\\My Drive\\StudyTable\\Soundscapes",
   "reindexFrequency": "15",
   "myMusicShuffle": false,
-  "currentTrackIndex": 5
+  "currentTrackIndex": 3
 }

@@ -1,0 +1,150 @@
+{
+  "main": {
+    "id": "54c1ddbfad8c2d57",
+    "type": "split",
+    "children": [
+      {
+        "id": "724a400fbc72ad41",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "27746dd6f0da06b2",
+            "type": "leaf",
+            "state": {
+              "type": "zotflow-local-zotero-reader-view",
+              "state": {
+                "file": "1.3 (07-10) Digital Electronics/1.1 Logic Gates & Boolean Algebra.pdf"
+              },
+              "icon": "book-open",
+              "title": "1.1 Logic Gates & Boolean Algebra.pdf"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e9eb09380ff0b4f4",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "8ff0bdc64b936f70",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "Search"
+        }
+      },
+      {
+        "id": "a13c024ca4007061",
+        "type": "leaf",
+        "state": {
+          "type": "zotflow-tree-view",
+          "state": {},
+          "icon": "library",
+          "title": "Zotero Library"
+        }
+      },
+      {
+        "id": "13fbf9a758b0b40a",
+        "type": "leaf",
+        "state": {
+          "type": "notebook-navigator",
+          "state": {},
+          "icon": "notebook-navigator",
+          "title": "Notebook Navigator"
+        }
+      }
+    ],
+    "currentTab": 2
+  },
+  "right": {
+    "id": "6eb8f2d03a1621da",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "ec4e6577d6bc258b",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "ZotFlow/Local/@1.1 Logic Gates & Boolean Algebra.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
+        }
+      },
+      {
+        "id": "7a9e8bb6646f9558",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "ZotFlow/Local/@1.1 Logic Gates & Boolean Algebra.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
+        }
+      },
+      {
+        "id": "aa32b30a846be6ff",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "ZotFlow/Local/@1.1 Logic Gates & Boolean Algebra.md",
+            "followCursor": false,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-list",
+          "title": "Outline"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "daily-notes:Open today's daily note": false,
+      "command-palette:Open command palette": false,
+      "notebook-navigator:Notebook Navigator": false,
+      "zotflow:ZotFlow: Activity Center": false,
+      "zotflow:ZotFlow: Search Zotero": false,
+      "ocr-extractor:OCR Extractor": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "27746dd6f0da06b2",
+  "lastOpenFiles": [
+    "ZotFlow/Local/@1.1 Logic Gates & Boolean Algebra.md",
+    "Annotations/5XYUGWJ5.png",
+    "Annotations/69L37GGW.png",
+    "Annotations/33Y2Y5XQ.png",
+    "Annotations/CRFQTLXJ.png",
+    "Annotations/QIJY8SVV.png",
+    "1.1 (14-15) Aptitude/1. Arithmetic Ability/1. Arithmetic Ability.md",
+    "1.1 (14-15) Aptitude/1.md",
+    "1.3 (07-10) Digital Electronics/1.3 (07-10) Digital Electronics.md",
+    "StudyTable.md"
+  ]
+}

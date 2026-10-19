@@ -1,12 +1,11 @@
 [
   "notebook-navigator",
-  "zotflow",
   "text-lens",
-  "ocr-extractor",
   "obsidian-tasks-plugin",
   "templater-obsidian",
   "soundscapes",
-  "quick-peek-sidebar",
-  "gate-calculator",
-  "advanced-pdf-export"
+  "status-bar-clock",
+  "advanced-pdf-export",
+  "zotflow",
+  "gate-calculator"
 ]

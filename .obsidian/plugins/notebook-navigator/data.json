@@ -50,56 +50,36 @@
       "periodicNotesFolder": "",
       "shortcuts": [
         {
-          "type": "note",
-          "path": "1.2 (12-14) Mathematics/1.1 Linear Algebra.pdf"
+          "type": "folder",
+          "path": "1.1 (14-15) Aptitude"
         },
         {
-          "type": "note",
-          "path": "1.2 (12-14) Mathematics/1.1 Linear Algebra.md"
+          "type": "folder",
+          "path": "1.2 (12-14) Mathematics"
         },
         {
-          "type": "note",
-          "path": "1.3 (07-10) Digital Electronics/3.1 Number Systems.pdf"
+          "type": "folder",
+          "path": "1.3 (07-10) Digital Electronics"
         },
         {
-          "type": "note",
-          "path": "1.3 (07-10) Digital Electronics/3.1 Number Systems.md"
+          "type": "folder",
+          "path": "1.4 (02-04) Computer Architecture"
         },
         {
-          "type": "note",
-          "path": "1.3 (07-10) Digital Electronics/2.1 Representation of Boolean Expressions & K-Maps.pdf"
+          "type": "folder",
+          "path": "2.1 (08-11) Network Analysis"
         },
         {
-          "type": "note",
-          "path": "1.3 (07-10) Digital Electronics/2.1 Representation of Boolean Expressions & K-Maps.md"
+          "type": "folder",
+          "path": "2.2 (08-11) Signals and Systems"
         },
         {
-          "type": "note",
-          "path": "1.3 (07-10) Digital Electronics/1.1 Logic Gates & Boolean Algebra.pdf"
+          "type": "folder",
+          "path": "2.3 (05-08) Control Systems"
         },
         {
-          "type": "note",
-          "path": "1.3 (07-10) Digital Electronics/1.1 Logic Gates & Boolean Algebra.md"
-        },
-        {
-          "type": "note",
-          "path": "2.1 (08-11) Network Analysis/1.1 Basics of Network Analysis.md"
-        },
-        {
-          "type": "note",
-          "path": "2.2 (05-08) Control Systems/1.1 Basics of Control system.pdf"
-        },
-        {
-          "type": "note",
-          "path": "2.2 (05-08) Control Systems/1.1 Basics of Control system.md"
-        },
-        {
-          "type": "note",
-          "path": "1.4 (02-04) Computer Architecture/1.1 Computer Organization & Architecture.pdf"
-        },
-        {
-          "type": "note",
-          "path": "1.4 (02-04) Computer Architecture/1.1 Computer Organization & Architecture.md"
+          "type": "folder",
+          "path": "3.1 (06-09) Electronic Devices"
         }
       ],
       "navRainbow": {
@@ -601,16 +581,6 @@
   },
   "customVaultName": "",
   "pinnedNotes": {
-    "1.3 (07-10) Digital Electronics/3.1 Number Systems.pdf": {
-      "folder": true,
-      "tag": false,
-      "property": false
-    },
-    "1.3 (07-10) Digital Electronics/3.1 Number Systems.md": {
-      "folder": true,
-      "tag": false,
-      "property": false
-    },
     "1.3 (07-10) Digital Electronics/1.1 Logic Gates & Boolean Algebra.md": {
       "folder": true,
       "tag": false,
@@ -621,47 +591,12 @@
       "tag": false,
       "property": false
     },
-    "1.3 (07-10) Digital Electronics/2.1 Representation of Boolean Expressions & K-Maps.md": {
-      "folder": true,
-      "tag": false,
-      "property": false
-    },
-    "1.3 (07-10) Digital Electronics/2.1 Representation of Boolean Expressions & K-Maps.pdf": {
-      "folder": true,
-      "tag": false,
-      "property": false
-    },
     "1.2 (12-14) Mathematics/1.1 Linear Algebra.md": {
       "folder": true,
       "tag": false,
       "property": false
     },
     "1.2 (12-14) Mathematics/1.1 Linear Algebra.pdf": {
-      "folder": true,
-      "tag": false,
-      "property": false
-    },
-    "2.1 (08-11) Network Analysis/1.1 Basics of Network Analysis.md": {
-      "folder": true,
-      "tag": false,
-      "property": false
-    },
-    "2.2 (05-08) Control Systems/1.1 Basics of Control system.md": {
-      "folder": true,
-      "tag": false,
-      "property": false
-    },
-    "2.2 (05-08) Control Systems/1.1 Basics of Control system.pdf": {
-      "folder": true,
-      "tag": false,
-      "property": false
-    },
-    "1.4 (02-04) Computer Architecture/1.1 Computer Organization & Architecture.pdf": {
-      "folder": true,
-      "tag": false,
-      "property": false
-    },
-    "1.4 (02-04) Computer Architecture/1.1 Computer Organization & Architecture.md": {
       "folder": true,
       "tag": false,
       "property": false
@@ -810,6 +745,56 @@
       "folder": true,
       "tag": false,
       "property": false
+    },
+    "1.1 (14-15) Aptitude/1. Arithmetic Ability/1.6 Pipes & Cisterns.pdf": {
+      "folder": true,
+      "tag": false,
+      "property": false
+    },
+    "1.3 (07-10) Digital Electronics/7.1 Satic Timing Analysis.pdf": {
+      "folder": true,
+      "tag": false,
+      "property": false
+    },
+    "1.3 (07-10) Digital Electronics/7.1 Satic Timing Analysis.md": {
+      "folder": true,
+      "tag": false,
+      "property": false
+    },
+    "1.3 (07-10) Digital Electronics/9.1 Logic families and Semiconductor Memories.md": {
+      "folder": true,
+      "tag": false,
+      "property": false
+    },
+    "1.3 (07-10) Digital Electronics/9.1 Logic families and Semiconductor Memories.pdf": {
+      "folder": true,
+      "tag": false,
+      "property": false
+    },
+    "1.3 (07-10) Digital Electronics/Assignment 3.md": {
+      "folder": true,
+      "tag": false,
+      "property": false
+    },
+    "1.3 (07-10) Digital Electronics/Assignment 3.pdf": {
+      "folder": true,
+      "tag": false,
+      "property": false
+    },
+    "1.4 (02-04) Computer Architecture/4.1 Number Representation.md": {
+      "folder": true,
+      "tag": false,
+      "property": false
+    },
+    "1.4 (02-04) Computer Architecture/4.1 Number Representation.pdf": {
+      "folder": true,
+      "tag": false,
+      "property": false
+    },
+    "1.4 (02-04) Computer Architecture/1.1 Computer Organization & Architecture.md": {
+      "folder": true,
+      "tag": false,
+      "property": false
     }
   },
   "fileIcons": {},
@@ -820,10 +805,8 @@
   "folderBackgroundColors": {},
   "folderSortOverrides": {
     "1.2 (12-14) Mathematics": "filename-asc",
-    "2.2 (05-08) Control Systems": "filename-asc",
     "1.3 (07-10) Digital Electronics": "filename-asc",
     "1.4 (02-04) Computer Architecture": "filename-asc",
-    "2.3 (08-11) Signals and Systems": "filename-asc",
     "2.1 (08-11) Network Analysis": "filename-asc",
     "@Archive": "filename-asc",
     "Annotations": "filename-asc",
@@ -847,7 +830,9 @@
     "1.1 (14-15) Aptitude": "filename-asc",
     "/": "filename-asc",
     "Templater": "filename-asc",
-    "Templater/Scripts": "filename-asc"
+    "Templater/Scripts": "filename-asc",
+    "2.3 (05-08) Control Systems": "filename-asc",
+    "2.2 (08-11) Signals and Systems": "filename-asc"
   },
   "folderTreeSortOverrides": {},
   "folderAppearances": {
@@ -923,9 +908,6 @@
     "2.1 (08-11) Network Analysis": {
       "groupBy": "folder"
     },
-    "2.3 (08-11) Signals and Systems": {
-      "groupBy": "folder"
-    },
     "0.0 VLSI for Placements": {
       "groupBy": "folder"
     },
@@ -935,13 +917,16 @@
     "1.4 (02-04) Computer Architecture": {
       "groupBy": "folder"
     },
-    "2.2 (05-08) Control Systems": {
-      "groupBy": "folder"
-    },
     "Templater": {
       "groupBy": "folder"
     },
     "Templater/Scripts": {
+      "groupBy": "folder"
+    },
+    "2.3 (05-08) Control Systems": {
+      "groupBy": "folder"
+    },
+    "2.2 (08-11) Signals and Systems": {
       "groupBy": "folder"
     }
   },
